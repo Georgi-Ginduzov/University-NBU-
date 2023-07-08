@@ -1,0 +1,15 @@
+C:\Users\User\source\repos\StringToNumbersCharsSubstrings\StringToNumbersCharsSubstrings\bin\Debug\net6.0\StringToNumbersCharsSubstrings.exe
+C:\Users\User\source\repos\StringToNumbersCharsSubstrings\StringToNumbersCharsSubstrings\bin\Debug\net6.0\StringToNumbersCharsSubstrings.deps.json
+C:\Users\User\source\repos\StringToNumbersCharsSubstrings\StringToNumbersCharsSubstrings\bin\Debug\net6.0\StringToNumbersCharsSubstrings.runtimeconfig.json
+C:\Users\User\source\repos\StringToNumbersCharsSubstrings\StringToNumbersCharsSubstrings\bin\Debug\net6.0\StringToNumbersCharsSubstrings.dll
+C:\Users\User\source\repos\StringToNumbersCharsSubstrings\StringToNumbersCharsSubstrings\bin\Debug\net6.0\StringToNumbersCharsSubstrings.pdb
+C:\Users\User\source\repos\StringToNumbersCharsSubstrings\StringToNumbersCharsSubstrings\obj\Debug\net6.0\StringToNumbersCharsSubstrings.csproj.AssemblyReference.cache
+C:\Users\User\source\repos\StringToNumbersCharsSubstrings\StringToNumbersCharsSubstrings\obj\Debug\net6.0\StringToNumbersCharsSubstrings.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\source\repos\StringToNumbersCharsSubstrings\StringToNumbersCharsSubstrings\obj\Debug\net6.0\StringToNumbersCharsSubstrings.AssemblyInfoInputs.cache
+C:\Users\User\source\repos\StringToNumbersCharsSubstrings\StringToNumbersCharsSubstrings\obj\Debug\net6.0\StringToNumbersCharsSubstrings.AssemblyInfo.cs
+C:\Users\User\source\repos\StringToNumbersCharsSubstrings\StringToNumbersCharsSubstrings\obj\Debug\net6.0\StringToNumbersCharsSubstrings.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\StringToNumbersCharsSubstrings\StringToNumbersCharsSubstrings\obj\Debug\net6.0\StringToNumbersCharsSubstrings.dll
+C:\Users\User\source\repos\StringToNumbersCharsSubstrings\StringToNumbersCharsSubstrings\obj\Debug\net6.0\refint\StringToNumbersCharsSubstrings.dll
+C:\Users\User\source\repos\StringToNumbersCharsSubstrings\StringToNumbersCharsSubstrings\obj\Debug\net6.0\StringToNumbersCharsSubstrings.pdb
+C:\Users\User\source\repos\StringToNumbersCharsSubstrings\StringToNumbersCharsSubstrings\obj\Debug\net6.0\StringToNumbersCharsSubstrings.genruntimeconfig.cache
+C:\Users\User\source\repos\StringToNumbersCharsSubstrings\StringToNumbersCharsSubstrings\obj\Debug\net6.0\ref\StringToNumbersCharsSubstrings.dll
