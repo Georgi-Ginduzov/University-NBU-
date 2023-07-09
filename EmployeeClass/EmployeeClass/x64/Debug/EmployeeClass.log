@@ -1,0 +1,6 @@
+﻿  Employee.cpp
+C:\Users\User\source\repos\EmployeeClass\EmployeeClass\Employee.cpp(26,7): error C2039: 'cout': is not a member of 'std'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\string(24,1): message : see declaration of 'std'
+C:\Users\User\source\repos\EmployeeClass\EmployeeClass\Employee.cpp(26,12): error C2065: 'cout': undeclared identifier
+  EmployeeClass.cpp
+  Generating Code...
