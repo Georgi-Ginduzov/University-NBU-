@@ -1,7 +1,9 @@
 #include <iostream>
+#include <cstdlib>
+#include <ctime>
 
 void printMovement(int start, int end) {
-	std::cout << start << " -> " << end << std::endl;
+	std::cout << start << " otiva pri " << end << std::endl;
 }
 
 void hanoi(int n, int start, int end) {
@@ -23,7 +25,7 @@ int main() {
 	time_t t0, t1;
 	clock_t c0, c1;
 	srand(time(NULL));
-	int n = 3, start = 1, end = 3;
+	int n =5, start = 1, end = 3;
 
 	t0 = time(NULL);
 	c0 = clock();
@@ -33,9 +35,7 @@ int main() {
 	c1 = clock();
 	t1 = time(NULL);
 
-	/*cout << "elapsed wall clock time: " << ((long)(t1 - t0)) << endl;
-	cout << "elapsed wall clock time:" << (float)(c1 -
-		c0) / CLOCKS_PER_SEC << endl;
-	cout << "is sorted" << is_sorted(a, ARRAY_SIZE);*/
-
+	std::cout << "elapsed wall clock time: " << ((long)(t1 - t0)) << std::endl;
+	std::cout << "elapsed wall clock time:" << (float)(c1 -
+		c0) / CLOCKS_PER_SEC << std::endl;
 }

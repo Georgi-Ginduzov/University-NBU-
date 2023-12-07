@@ -1,2 +1,3 @@
 ﻿  StartUp.cpp
+C:\Users\Asus\source\repos\University-NBU-\RecursionHomeworks\HanoiTowers\StartUp.cpp(27,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
   HanoiTowers.vcxproj -> C:\Users\Asus\source\repos\University-NBU-\RecursionHomeworks\x64\Debug\HanoiTowers.exe
