@@ -1,23 +1,17 @@
 #include <iostream>
 #include <cstdlib>
-#include <ctime>
+#include <ctime>	
 
-void printMovement(int start, int end) {
-	std::cout << start << " otiva pri " << end << std::endl;
-}
-
-void hanoi(int n, int start, int end) {
-	if (n == 1)
+void hanoi(int n, int from, int to, int help) {
+	if (n > 1)
 	{
-		printMovement(start, end);
+		hanoi(n - 1, from, help, to);
+		std::cout << "Premesti edin disk ot " << from << " pri " << to << std::endl;
+		hanoi(n - 1, help, to, from);
 	}
 	else
 	{
-		int other = 6 - (start + end);
-
-		hanoi(n - 1, start, other);
-		printMovement(start, end);
-		hanoi(n - 1, other, end);
+		std::cout << "Premesti edin disk ot " << from << " pri " << to << std::endl;
 	}
 }
 
@@ -25,12 +19,12 @@ int main() {
 	time_t t0, t1;
 	clock_t c0, c1;
 	srand(time(NULL));
-	int n =5, start = 1, end = 3;
+	int n =3, from = 1, to = 3, help = 2;
 
 	t0 = time(NULL);
 	c0 = clock();
 
-	hanoi(n, start, end);
+	hanoi(n, from, to, help);
 
 	c1 = clock();
 	t1 = time(NULL);
