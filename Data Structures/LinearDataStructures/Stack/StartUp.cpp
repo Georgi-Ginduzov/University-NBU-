@@ -7,15 +7,11 @@ struct Element {
     po Next;
 };
 
-po newNode(int data) {
+po newNode(char data) {
     po node = new Element;
     node->Data = data;
     node->Next = nullptr;
     return node;
-}
-
-bool isEmpty(po top) {
-    return top == nullptr;
 }
 
 void push(po& top, char data) {
@@ -26,23 +22,14 @@ void push(po& top, char data) {
 }
 
 char pop(po& top) {
-    if (isEmpty(top)) {
-        std::cout << "Stack is empty\n";
-        return -1;
-    }
     po temp = top;
     top = top->Next;
     char popped = temp->Data;
-    std::cout << temp->Data << " is popped out\n";
     delete temp;
     return popped;
 }
 
 char peek(po top) {
-    if (isEmpty(top)) {
-        std::cout << "Stack is empty\n";
-        return -1;
-    }
     return top->Data;
 }
 
@@ -60,7 +47,7 @@ int main() {
 
     for (int i = 0; i < name.length(); i++)
     {
-        pop(top);
+        std::cout << pop(top) << " is popped out of the stack\n";
     }
 
     return 0;
