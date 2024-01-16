@@ -15,6 +15,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GCDRecursive", "GCDRecursiv
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FactorielRecursive", "FactorielRecursive\FactorielRecursive.vcxproj", "{85AB2EE7-5C7F-4F12-8920-7CFEED96CEBC}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BinarySearch", "BinarySearch\BinarySearch.vcxproj", "{EBE49C87-CECF-474B-8EE8-64410A3A775C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -71,6 +73,14 @@ Global
 		{85AB2EE7-5C7F-4F12-8920-7CFEED96CEBC}.Release|x64.Build.0 = Release|x64
 		{85AB2EE7-5C7F-4F12-8920-7CFEED96CEBC}.Release|x86.ActiveCfg = Release|Win32
 		{85AB2EE7-5C7F-4F12-8920-7CFEED96CEBC}.Release|x86.Build.0 = Release|Win32
+		{EBE49C87-CECF-474B-8EE8-64410A3A775C}.Debug|x64.ActiveCfg = Debug|x64
+		{EBE49C87-CECF-474B-8EE8-64410A3A775C}.Debug|x64.Build.0 = Debug|x64
+		{EBE49C87-CECF-474B-8EE8-64410A3A775C}.Debug|x86.ActiveCfg = Debug|Win32
+		{EBE49C87-CECF-474B-8EE8-64410A3A775C}.Debug|x86.Build.0 = Debug|Win32
+		{EBE49C87-CECF-474B-8EE8-64410A3A775C}.Release|x64.ActiveCfg = Release|x64
+		{EBE49C87-CECF-474B-8EE8-64410A3A775C}.Release|x64.Build.0 = Release|x64
+		{EBE49C87-CECF-474B-8EE8-64410A3A775C}.Release|x86.ActiveCfg = Release|Win32
+		{EBE49C87-CECF-474B-8EE8-64410A3A775C}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

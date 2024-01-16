@@ -3,10 +3,12 @@
 int factoriel(int number) {
 	if (number > 1)
 	{
+		std::cout << "Potuvane: n=" << number << "\n";
 		return number * factoriel(number - 1);
 	}
 	else
 	{
+		std::cout << "Izpluvane: n=" << number << std::endl;
 		return 1;
 	}
 }

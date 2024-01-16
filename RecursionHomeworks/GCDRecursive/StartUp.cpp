@@ -16,7 +16,7 @@ int gcd(int a, int b) {
 }
 
 int main() {
-	int a, b;// fibonacci - 21, 13
+	int a, b;// fibonacci - 55, 34
 	std::cin >> a;
 	std::cin >> b;
 
