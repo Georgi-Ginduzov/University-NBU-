@@ -13,7 +13,6 @@ int gcd(int a, int b) {
 		std::cout << "Izpluvane:\nb = " << b << std::endl;
 		return b;
 	}
-	std::cout << "Izpluvanee:\nb = " << b << std::endl;
 }
 
 int main() {

@@ -5,6 +5,10 @@ int factoriel(int number) {
 	{
 		return number * factoriel(number - 1);
 	}
+	else
+	{
+		return 1;
+	}
 }
 
 int main() {
