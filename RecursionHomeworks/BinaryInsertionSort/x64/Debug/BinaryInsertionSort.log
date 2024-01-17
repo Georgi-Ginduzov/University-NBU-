@@ -1,3 +1,3 @@
 ﻿  BinaryInsertionSort.cpp
-C:\Users\User\source\Softuni\02. C# Advanced May.2023\RecursionHomeworks\BinaryInsertionSort\BinaryInsertionSort.cpp(20,15): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-  BinaryInsertionSort.vcxproj -> C:\Users\User\source\Softuni\02. C# Advanced May.2023\RecursionHomeworks\x64\Debug\BinaryInsertionSort.exe
+C:\Users\Asus\source\repos\University-NBU-\RecursionHomeworks\BinaryInsertionSort\BinaryInsertionSort.cpp(20,15): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  BinaryInsertionSort.vcxproj -> C:\Users\Asus\source\repos\University-NBU-\RecursionHomeworks\x64\Debug\BinaryInsertionSort.exe
