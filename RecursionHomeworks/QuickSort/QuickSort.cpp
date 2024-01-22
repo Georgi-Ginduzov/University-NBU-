@@ -1,40 +1,43 @@
 #include <iostream>
-#include <vector>
 
-void quicksort(std::vector<int>& arr, int low, int high) {
+void quicksort(int arr[], int low, int high) {
     if (low < high) {
-        int pivot = arr[high];  // Choose the last element as the pivot
-        int i = low - 1;       // Index of the smaller element
+        int pivot = arr[high]; 
+        int i = low - 1;
 
-        for (int j = low; j < high; j++) {
+        for (int j = low; j < high; j++){
             if (arr[j] < pivot) {
                 i++;
-                std::swap(arr[i], arr[j]);
+                int temp = arr[i];
+                arr[i] = arr[j];
+                arr[j] = temp;
             }
         }
-
-        std::swap(arr[i + 1], arr[high]);
+        int temp = arr[i + 1];
+        arr[i + 1] = arr[high];
+        arr[high] = temp;
         int partition_index = i + 1;
 
-        // Recursively sort the elements before and after the partition
         quicksort(arr, low, partition_index - 1);
         quicksort(arr, partition_index + 1, high);
     }
 }
 
 int main() {
-    std::vector<int> arr = { 1, 0, 7, 0, 3, 4, 7 };
-    int n = arr.size();
+    time_t t0, t1;
+    clock_t c0, c1;
+    const int N = 7;
+    int arr[N]{ 1, 0, 8, 0, 3, 4, 2 };
 
     std::cout << "Unsorted array: ";
-    for (int i = 0; i < n; i++) {
+    for (int i = 0; i < N; i++) {
         std::cout << arr[i] << " ";
     }
 
-    quicksort(arr, 0, n - 1);
-
+    quicksort(arr, 0, N - 1);
+    
     std::cout << "\nSorted array: ";
-    for (int i = 0; i < n; i++) {
+    for (int i = 0; i < N; i++) {
         std::cout << arr[i] << " ";
     }
 

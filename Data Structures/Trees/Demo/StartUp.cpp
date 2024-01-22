@@ -52,10 +52,10 @@ po ibd(int n) {
 	{
 		int nl = n / 2, nd = n - nl - 1;
 		darj = new node;
+		darj->left = ibd(nl);
 		std::cout << "x=";
 		std::cin >> x;
 		darj->data = x;
-		darj->left = ibd(nl);
 		darj->right = ibd(nd);
 		return darj;
 	}
@@ -72,5 +72,5 @@ int main() {
 	std::cin >> n;
 	root = ibd(n);
 
-	rowPrint(root, 0);
+	print(root, 0);
 }
