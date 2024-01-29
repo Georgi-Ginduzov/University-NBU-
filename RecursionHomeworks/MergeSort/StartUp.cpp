@@ -8,17 +8,21 @@ void merge(int array[], int left, int middle, int right) {
     int* left_array = new int[n1];
     int* right_array = new int[n2];
 
+    cout << "Lqv podmasiv: ";
     for (int i = 0; i < n1; i++) {
         left_array[i] = array[left + i];
+        cout << left_array[i] << " "; // corrected here
     }
+    cout << "\nDesen podmasiv: ";
     for (int j = 0; j < n2; j++) {
         right_array[j] = array[middle + 1 + j];
+        cout << right_array[j] << " "; // corrected here
     }
 
-    int i = 0;  
-    int j = 0;  
+    int i = 0;
+    int j = 0;
     int k = left;
-    
+
     std::cout << "\nSlivam v C";
     while (i < n1 && j < n2) {
         if (left_array[i] <= right_array[j]) {
@@ -60,20 +64,10 @@ void merge_sort(int array[], int left, int right) {
 }
 
 int main() {
-    int array[] = { 12, 11, 13, 5, 6, 7 };
+    int array[] = { 1, 2, 3, 4, 5, 6 };
     int size = sizeof(array) / sizeof(array[0]);
 
-    std::cout << "\nMasiv: ";
-    for (int i = 0; i < size; i++) {
-        std::cout << array[i] << " ";
-    }
-
     merge_sort(array, 0, size - 1);
-
-    std::cout << "\nSorted array: ";
-    for (int i = 0; i < size; i++) {
-        std::cout << array[i] << " ";
-    }
 
     return 0;
 }
