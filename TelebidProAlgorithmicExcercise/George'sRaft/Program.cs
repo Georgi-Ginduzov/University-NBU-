@@ -1,4 +1,6 @@
-﻿namespace Demo
+﻿using System.Reflection.Metadata.Ecma335;
+
+namespace Demo
 {
     internal class Program
     {
@@ -6,8 +8,8 @@
         {
             int[] goatsAndCourses = Console.ReadLine().Split(' ').Select(int.Parse).ToArray();
             int goats = goatsAndCourses[0];
-            int goatsWeightSum = 0;
             int courses = goatsAndCourses[1];
+            int goatsWeightSum = 0;// 30 10 5 7 4 15 
 
             int[] weights = Console.ReadLine().Split(' ').Select(int.Parse).ToArray();
 
@@ -35,15 +37,18 @@
         }
         static bool CanTransportAllGoats(int[] weights, int capacity, int maxCourses)
         {
-            int courses = 1, currentWeight = 0;
+            int courses = 0, currentWeight = 0;
             foreach (int weight in weights)
             {
                 if (currentWeight + weight > capacity)
                 {
                     currentWeight = weight;
                     courses++;
-                    if (courses > maxCourses)
+                    if (courses > maxCourses)// when I courses = maxcourses it continuous but when there are more sheeps left it continuous
                         return false;
+                    if (courses == maxCourses && currentWeight == weights.Last())
+                        return false;
+                    
                 }
                 else
                 {
