@@ -11,22 +11,19 @@ namespace Demo
             int courses = goatsAndCourses[1];
             int goatsWeightSum = 0;// 30 10 5 7 4 15 
 
-            int[] weights = Console.ReadLine().Split(' ').Select(int.Parse).ToArray();
-
-            for (int i = 0; i < goats; i++)
-            {
-                goatsWeightSum += weights[i];
-            }
+            int[] weights = Console.ReadLine().Split(' ').Select(int.Parse).OrderByDescending(x => x).ToArray();
 
             int raft = (goatsWeightSum + weights[goats - 1]) / 2;
-            int low = weights.Max(), high = goatsWeightSum;
+            int low = weights.Max(), high = weights.Sum();
+            Console.WriteLine(high);
 
-            while (low <= high)
+            while (low < high)
             {
                 int mid = (low + high) / 2;
-                if (CanTransportAllGoats(weights, mid, courses))
+                Console.WriteLine(mid);
+                if (CanTransportAllGoats(weights, mid, courses)) // mid = 40 or 39? in low=mid+1                 
                 {
-                    high = mid - 1;
+                    high = mid;
                 }
                 else
                 {
@@ -42,17 +39,17 @@ namespace Demo
             {
                 if (currentWeight + weight > capacity)
                 {
-                    currentWeight = weight;
+                    currentWeight = 0;
                     courses++;
-                    if (courses > maxCourses)// when I courses = maxcourses it continuous but when there are more sheeps left it continuous
-                        return false;
-                    if (courses == maxCourses && currentWeight == weights.Last())
+                    if (courses > maxCourses)
                         return false;
                     
                 }
-                else
+                currentWeight += weight;
+
+                if (weight == weights.Last() && currentWeight > weight && courses == maxCourses)
                 {
-                    currentWeight += weight;
+                    return false;
                 }
             }
             return true;
