@@ -1,0 +1,7 @@
+﻿  StartUp.cpp
+C:\Users\Asus\source\repos\University-NBU-\Data Structures\Trees\Test\StartUp.cpp(5,8): error C2143: syntax error: missing ';' before '*'
+C:\Users\Asus\source\repos\University-NBU-\Data Structures\Trees\Test\StartUp.cpp(5,8): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\Asus\source\repos\University-NBU-\Data Structures\Trees\Test\StartUp.cpp(5,21): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\Asus\source\repos\University-NBU-\Data Structures\Trees\Test\StartUp.cpp(5,21): error C2059: syntax error: '{'
+C:\Users\Asus\source\repos\University-NBU-\Data Structures\Trees\Test\StartUp.cpp(5,21): error C2143: syntax error: missing ';' before '{'
+C:\Users\Asus\source\repos\University-NBU-\Data Structures\Trees\Test\StartUp.cpp(5,21): error C2447: '{': missing function header (old-style formal list?)

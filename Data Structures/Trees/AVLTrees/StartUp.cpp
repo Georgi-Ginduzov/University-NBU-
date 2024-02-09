@@ -36,21 +36,39 @@ void postfix(po help){
 	}
 }
 
-//int count1 = 0;
-//void print(po root1) {
-//	if (root1) {
-//		std::cout << "\t" << root1->data;
-//		count1++;
-//		print(root1->right);
-//		count1--;
-//		std::cout << std::endl;
-//		for (int i = 1; i <= count1; i++) 
-//			std::cout << "\t";
-//		count1++;
-//		print(root1->left);
-//		count1--;
-//	}
-//}
+void printInFix(po root, int space) {
+	if (root == NULL)
+		return;
+
+	space += 10;
+
+	printInFix(root->right, space);
+
+	std::cout << std::endl;
+	for (int i = 10; i < space; i++)
+		std::cout << " ";
+	std::cout << root->data << "\n";
+
+	printInFix(root->left, space);
+}
+
+void printPreFix(po root, int space) {
+	if (root == NULL)
+		return;
+
+
+	std::cout << root->data << "\n";
+	printPreFix(root->left, space);
+
+	space += 10;
+
+	printPreFix(root->right, space);
+
+	std::cout << std::endl;
+	for (int i = 10; i < space; i++)
+		std::cout << " ";
+
+}
 
 po ibd(int n) {
 	po darj;
@@ -80,5 +98,21 @@ int main() {
 	std::cin >> n;
 	root = ibd(n);
 
-	//print(root);
+	printPreFix(root, 0);
 }
+
+//int count1 = 0;
+//void printPr(po root1) {
+//	if (root1) {
+//		std::cout << "\t" << root1->data;
+//		count1++;
+//		print(root1->right);
+//		count1--;
+//		std::cout << std::endl;
+//		for (int i = 1; i <= count1; i++) 
+//			std::cout << "\t";
+//		count1++;
+//		print(root1->left);
+//		count1--;
+//	}
+//}

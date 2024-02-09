@@ -15,7 +15,7 @@ namespace Demo
 
             int raft = (goatsWeightSum + weights[goats - 1]) / 2;
             int low = weights.Max(), high = weights.Sum();
-            Console.WriteLine(high);
+            Console.WriteLine($"high: {high}\n high / 3 = {high / 3}");
 
             while (low < high)
             {
