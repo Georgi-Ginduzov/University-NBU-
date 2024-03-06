@@ -31,11 +31,15 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        Scanner myObj = new Scanner(System.in);  // Create a Scanner object
-        int n = Integer.parseInt(myObj.nextLine());  // Read user input
+        Scanner myObj = new Scanner(System.in);
+        int n = Integer.parseInt(myObj.nextLine());
 
-        int sum = calculateSum(n);
-
-        System.out.print(sum);
+        if (n >= 1 && n <= 9){
+            int sum = calculateSum(n);
+            System.out.print(sum);
+        }
+        else{
+            System.out.print(0);
+        }
     }
 }
