@@ -1,10 +1,22 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Asus\\source\\repos\\University-NBU-\\AlgorithmAnalisys\\",
+  "WorkspaceRootPath": "C:\\Users\\Asus\\source\\repos\\University-NBU-\\Algorithms Advanced\\AlgorithmAnalisys\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D91ACE64-A2E0-467E-B0BD-F3F5CBDDBB07}|Task1\\Task1.csproj|c:\\users\\asus\\source\\repos\\university-nbu-\\algorithmanalisys\\task1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{ED8FEA64-B72B-4983-B005-6C52BF0517D2}|HighestSUmOfSubarray\\HighestSUmOfSubarray.vcxproj|C:\\Users\\Asus\\source\\repos\\University-NBU-\\Algorithms Advanced\\AlgorithmAnalisys\\HighestSUmOfSubarray\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{ED8FEA64-B72B-4983-B005-6C52BF0517D2}|HighestSUmOfSubarray\\HighestSUmOfSubarray.vcxproj|solutionrelative:HighestSUmOfSubarray\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D91ACE64-A2E0-467E-B0BD-F3F5CBDDBB07}|Task1\\Task1.csproj|c:\\users\\asus\\source\\repos\\university-nbu-\\algorithms advanced\\algorithmanalisys\\task1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D91ACE64-A2E0-467E-B0BD-F3F5CBDDBB07}|Task1\\Task1.csproj|solutionrelative:task1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95E960FB-E591-43C5-9AEE-CE4DC2AC9577}|FIndTheLargestFactorielPair\\FIndTheLargestFactorielPair.vcxproj|C:\\Users\\Asus\\source\\repos\\University-NBU-\\Algorithms Advanced\\AlgorithmAnalisys\\FIndTheLargestFactorielPair\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{95E960FB-E591-43C5-9AEE-CE4DC2AC9577}|FIndTheLargestFactorielPair\\FIndTheLargestFactorielPair.vcxproj|solutionrelative:FIndTheLargestFactorielPair\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68DB6C65-7343-4257-85D8-B476CA159C0B}|FindThreePairMIltiplication\\FindThreePairMIltiplication.vcxproj|C:\\Users\\Asus\\source\\repos\\University-NBU-\\Algorithms Advanced\\AlgorithmAnalisys\\FindThreePairMIltiplication\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{68DB6C65-7343-4257-85D8-B476CA159C0B}|FindThreePairMIltiplication\\FindThreePairMIltiplication.vcxproj|solutionrelative:FindThreePairMIltiplication\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -19,15 +31,58 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Source.cpp",
+              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\University-NBU-\\Algorithms Advanced\\AlgorithmAnalisys\\HighestSUmOfSubarray\\Source.cpp",
+              "RelativeDocumentMoniker": "HighestSUmOfSubarray\\Source.cpp",
+              "ToolTip": "C:\\Users\\Asus\\source\\repos\\University-NBU-\\Algorithms Advanced\\AlgorithmAnalisys\\HighestSUmOfSubarray\\Source.cpp",
+              "RelativeToolTip": "HighestSUmOfSubarray\\Source.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-03-07T12:10:14.816Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Source.cpp",
+              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\University-NBU-\\Algorithms Advanced\\AlgorithmAnalisys\\FindThreePairMIltiplication\\Source.cpp",
+              "RelativeDocumentMoniker": "FindThreePairMIltiplication\\Source.cpp",
+              "ToolTip": "C:\\Users\\Asus\\source\\repos\\University-NBU-\\Algorithms Advanced\\AlgorithmAnalisys\\FindThreePairMIltiplication\\Source.cpp",
+              "RelativeToolTip": "FindThreePairMIltiplication\\Source.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAALAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-03-07T11:33:59.022Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Source.cpp",
+              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\University-NBU-\\Algorithms Advanced\\AlgorithmAnalisys\\FIndTheLargestFactorielPair\\Source.cpp",
+              "RelativeDocumentMoniker": "FIndTheLargestFactorielPair\\Source.cpp",
+              "ToolTip": "C:\\Users\\Asus\\source\\repos\\University-NBU-\\Algorithms Advanced\\AlgorithmAnalisys\\FIndTheLargestFactorielPair\\Source.cpp",
+              "RelativeToolTip": "FIndTheLargestFactorielPair\\Source.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-03-07T11:11:37.36Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\University-NBU-\\AlgorithmAnalisys\\Task1\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\University-NBU-\\Algorithms Advanced\\AlgorithmAnalisys\\Task1\\Program.cs",
               "RelativeDocumentMoniker": "Task1\\Program.cs",
-              "ToolTip": "C:\\Users\\Asus\\source\\repos\\University-NBU-\\AlgorithmAnalisys\\Task1\\Program.cs",
+              "ToolTip": "C:\\Users\\Asus\\source\\repos\\University-NBU-\\Algorithms Advanced\\AlgorithmAnalisys\\Task1\\Program.cs",
               "RelativeToolTip": "Task1\\Program.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAbAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-02-29T12:04:10.451Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
             }
           ]
         }

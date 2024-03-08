@@ -13,3 +13,18 @@ C:\Users\Asus\source\repos\University-NBU-\AlgorithmAnalisys\Task1\obj\Debug\net
 C:\Users\Asus\source\repos\University-NBU-\AlgorithmAnalisys\Task1\obj\Debug\net6.0\Task1.pdb
 C:\Users\Asus\source\repos\University-NBU-\AlgorithmAnalisys\Task1\obj\Debug\net6.0\Task1.genruntimeconfig.cache
 C:\Users\Asus\source\repos\University-NBU-\AlgorithmAnalisys\Task1\obj\Debug\net6.0\ref\Task1.dll
+C:\Users\Asus\source\repos\University-NBU-\Algorithms Advanced\AlgorithmAnalisys\Task1\bin\Debug\net6.0\Task1.exe
+C:\Users\Asus\source\repos\University-NBU-\Algorithms Advanced\AlgorithmAnalisys\Task1\bin\Debug\net6.0\Task1.deps.json
+C:\Users\Asus\source\repos\University-NBU-\Algorithms Advanced\AlgorithmAnalisys\Task1\bin\Debug\net6.0\Task1.runtimeconfig.json
+C:\Users\Asus\source\repos\University-NBU-\Algorithms Advanced\AlgorithmAnalisys\Task1\bin\Debug\net6.0\Task1.dll
+C:\Users\Asus\source\repos\University-NBU-\Algorithms Advanced\AlgorithmAnalisys\Task1\bin\Debug\net6.0\Task1.pdb
+C:\Users\Asus\source\repos\University-NBU-\Algorithms Advanced\AlgorithmAnalisys\Task1\obj\Debug\net6.0\Task1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Asus\source\repos\University-NBU-\Algorithms Advanced\AlgorithmAnalisys\Task1\obj\Debug\net6.0\Task1.AssemblyInfoInputs.cache
+C:\Users\Asus\source\repos\University-NBU-\Algorithms Advanced\AlgorithmAnalisys\Task1\obj\Debug\net6.0\Task1.AssemblyInfo.cs
+C:\Users\Asus\source\repos\University-NBU-\Algorithms Advanced\AlgorithmAnalisys\Task1\obj\Debug\net6.0\Task1.csproj.CoreCompileInputs.cache
+C:\Users\Asus\source\repos\University-NBU-\Algorithms Advanced\AlgorithmAnalisys\Task1\obj\Debug\net6.0\Task1.sourcelink.json
+C:\Users\Asus\source\repos\University-NBU-\Algorithms Advanced\AlgorithmAnalisys\Task1\obj\Debug\net6.0\Task1.dll
+C:\Users\Asus\source\repos\University-NBU-\Algorithms Advanced\AlgorithmAnalisys\Task1\obj\Debug\net6.0\refint\Task1.dll
+C:\Users\Asus\source\repos\University-NBU-\Algorithms Advanced\AlgorithmAnalisys\Task1\obj\Debug\net6.0\Task1.pdb
+C:\Users\Asus\source\repos\University-NBU-\Algorithms Advanced\AlgorithmAnalisys\Task1\obj\Debug\net6.0\Task1.genruntimeconfig.cache
+C:\Users\Asus\source\repos\University-NBU-\Algorithms Advanced\AlgorithmAnalisys\Task1\obj\Debug\net6.0\ref\Task1.dll

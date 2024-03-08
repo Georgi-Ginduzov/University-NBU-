@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="19485dcd-7935-42f1-939f-69c94826aa55" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../Homework 1/.idea/Homework 1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Homework 1/Task 1/Homework1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Homework 1/Task 1/Task 1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Homework 1/Task 3/Task 3.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Homework 1/Task4/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Homework 1/Task4/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Homework 1/Task4/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Homework 1/Task4/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Homework 1/Task4/Task4.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Homework 1/Task4/src/Studio.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Homework 1/sumTrianleOfNumbers/sumTrianleOfNumbers.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Algorithms Advanced/AlgorithmAnalisys/.vs/AlgorithmAnalisys/DesignTimeBuild/.dtbcache.v2" beforeDir="false" afterPath="$PROJECT_DIR$/../../Algorithms Advanced/AlgorithmAnalisys/.vs/AlgorithmAnalisys/DesignTimeBuild/.dtbcache.v2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Algorithms Advanced/AlgorithmAnalisys/.vs/AlgorithmAnalisys/FileContentIndex/1041688b-0d96-4f5c-a981-f7f6f1081208.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Algorithms Advanced/AlgorithmAnalisys/.vs/AlgorithmAnalisys/v17/.futdcache.v2" beforeDir="false" afterPath="$PROJECT_DIR$/../../Algorithms Advanced/AlgorithmAnalisys/.vs/AlgorithmAnalisys/v17/.futdcache.v2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Algorithms Advanced/AlgorithmAnalisys/.vs/AlgorithmAnalisys/v17/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/../../Algorithms Advanced/AlgorithmAnalisys/.vs/AlgorithmAnalisys/v17/.suo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Algorithms Advanced/AlgorithmAnalisys/.vs/AlgorithmAnalisys/v17/DocumentLayout.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../Algorithms Advanced/AlgorithmAnalisys/.vs/AlgorithmAnalisys/v17/DocumentLayout.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Algorithms Advanced/AlgorithmAnalisys/.vs/ProjectEvaluation/algorithmanalisys.metadata.v7.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../Algorithms Advanced/AlgorithmAnalisys/.vs/ProjectEvaluation/algorithmanalisys.metadata.v7.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Algorithms Advanced/AlgorithmAnalisys/.vs/ProjectEvaluation/algorithmanalisys.projects.v7.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../Algorithms Advanced/AlgorithmAnalisys/.vs/ProjectEvaluation/algorithmanalisys.projects.v7.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Algorithms Advanced/AlgorithmAnalisys/AlgorithmAnalisys.sln" beforeDir="false" afterPath="$PROJECT_DIR$/../../Algorithms Advanced/AlgorithmAnalisys/AlgorithmAnalisys.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Algorithms Advanced/AlgorithmAnalisys/Task1/bin/Debug/net6.0/Task1.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../Algorithms Advanced/AlgorithmAnalisys/Task1/bin/Debug/net6.0/Task1.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Algorithms Advanced/AlgorithmAnalisys/Task1/bin/Debug/net6.0/Task1.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../../Algorithms Advanced/AlgorithmAnalisys/Task1/bin/Debug/net6.0/Task1.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Algorithms Advanced/AlgorithmAnalisys/Task1/bin/Debug/net6.0/Task1.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../../Algorithms Advanced/AlgorithmAnalisys/Task1/bin/Debug/net6.0/Task1.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Algorithms Advanced/AlgorithmAnalisys/Task1/obj/Debug/net6.0/Task1.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../Algorithms Advanced/AlgorithmAnalisys/Task1/obj/Debug/net6.0/Task1.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Algorithms Advanced/AlgorithmAnalisys/Task1/obj/Debug/net6.0/Task1.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../Algorithms Advanced/AlgorithmAnalisys/Task1/obj/Debug/net6.0/Task1.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Algorithms Advanced/AlgorithmAnalisys/Task1/obj/Debug/net6.0/Task1.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/../../Algorithms Advanced/AlgorithmAnalisys/Task1/obj/Debug/net6.0/Task1.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Algorithms Advanced/AlgorithmAnalisys/Task1/obj/Debug/net6.0/Task1.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../Algorithms Advanced/AlgorithmAnalisys/Task1/obj/Debug/net6.0/Task1.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Algorithms Advanced/AlgorithmAnalisys/Task1/obj/Debug/net6.0/Task1.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../Algorithms Advanced/AlgorithmAnalisys/Task1/obj/Debug/net6.0/Task1.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Algorithms Advanced/AlgorithmAnalisys/Task1/obj/Debug/net6.0/Task1.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../Algorithms Advanced/AlgorithmAnalisys/Task1/obj/Debug/net6.0/Task1.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Algorithms Advanced/AlgorithmAnalisys/Task1/obj/Debug/net6.0/Task1.genruntimeconfig.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../Algorithms Advanced/AlgorithmAnalisys/Task1/obj/Debug/net6.0/Task1.genruntimeconfig.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Algorithms Advanced/AlgorithmAnalisys/Task1/obj/Debug/net6.0/Task1.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../../Algorithms Advanced/AlgorithmAnalisys/Task1/obj/Debug/net6.0/Task1.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Algorithms Advanced/AlgorithmAnalisys/Task1/obj/Debug/net6.0/Task1.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../Algorithms Advanced/AlgorithmAnalisys/Task1/obj/Debug/net6.0/Task1.sourcelink.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Algorithms Advanced/AlgorithmAnalisys/Task1/obj/Debug/net6.0/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../../Algorithms Advanced/AlgorithmAnalisys/Task1/obj/Debug/net6.0/apphost.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Algorithms Advanced/AlgorithmAnalisys/Task1/obj/Debug/net6.0/ref/Task1.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../Algorithms Advanced/AlgorithmAnalisys/Task1/obj/Debug/net6.0/ref/Task1.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Algorithms Advanced/AlgorithmAnalisys/Task1/obj/Debug/net6.0/refint/Task1.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../Algorithms Advanced/AlgorithmAnalisys/Task1/obj/Debug/net6.0/refint/Task1.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Algorithms Advanced/AlgorithmAnalisys/Task1/obj/Task1.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../Algorithms Advanced/AlgorithmAnalisys/Task1/obj/Task1.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Algorithms Advanced/AlgorithmAnalisys/Task1/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../Algorithms Advanced/AlgorithmAnalisys/Task1/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Algorithms Advanced/AlgorithmAnalisys/Task1/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../Algorithms Advanced/AlgorithmAnalisys/Task1/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Homework/Task 1/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Homework/Task 1/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Homework/Task 1/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Homework/Task 1/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Homework/Task 1/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Homework/Task 1/Homework1.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Homework/Task 1/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Homework/sumTrianleOfNumbers/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Homework/sumTrianleOfNumbers/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Homework/sumTrianleOfNumbers/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Homework/sumTrianleOfNumbers/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Homework/sumTrianleOfNumbers/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Homework/sumTrianleOfNumbers/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Homework/sumTrianleOfNumbers/sumTrianleOfNumbers.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task 3.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Manager.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Georgi-Ginduzov&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="6edefc97-ddd2-4a1a-a8d4-9abd7980f59f" />
+        <option name="url" value="https://github.com/Georgi-Ginduzov/University-NBU-.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
+  <component name="ProjectId" id="2dKVpqicsUsaNNB9VWG2rDiDjJc" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Asus/source/repos/University-NBU-/Java Programming/Homework 1/Task 3",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "C:/Users/Asus/source/repos/University-NBU-/Java Programming/Task 3/src/Main.java",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-21.0.2-openjdk-21.0.2-4caba194b151-4f524021" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="19485dcd-7935-42f1-939f-69c94826aa55" name="Changes" comment="" />
+      <created>1709756945535</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1709756945535</updated>
+      <workItem from="1709756946613" duration="2054000" />
+      <workItem from="1709759521834" duration="3098000" />
+      <workItem from="1709799893498" duration="64000" />
+      <workItem from="1709800015531" duration="1754000" />
+      <workItem from="1709802530690" duration="1796000" />
+      <workItem from="1709815587308" duration="91000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
