@@ -1,4 +1,5 @@
 import java.math.BigDecimal;
+import java.math.RoundingMode;
 import java.util.Scanner;
 
 public class Main {
@@ -28,8 +29,8 @@ public class Main {
         studio2.setBgnToEuro(currencyEuro);
         studio2.setTodaysRentHours(workedHours);
 
-        System.out.print(studio1.dailyEarningsInBgn() + "\n");
-        System.out.print(studio1.dailyEarningsInEuro()+ "\n");
+        System.out.print(studio1.dailyEarningsInBgn().setScale(2, RoundingMode.HALF_UP) + "\n");
+        System.out.print(studio1.dailyEarningsInEuro().setScale(2, RoundingMode.HALF_UP)+ "\n");
         System.out.print(studio1.moreExpensiveStudio(studio2).getId()+ "\n");
         System.out.print(studio1.studioWithMoreEarnings(studio2));
 

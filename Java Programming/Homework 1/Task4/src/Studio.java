@@ -1,4 +1,5 @@
 import java.math.BigDecimal;
+import java.math.RoundingMode;
 
 public class Studio {
     private final int id;
@@ -18,7 +19,7 @@ public class Studio {
             this.minimalRentPerHour = BigDecimal.valueOf(0);
         }
         else {
-            this.minimalRentPerHour = minimalRentPerHour;
+            this.minimalRentPerHour = minimalRentPerHour.setScale(2, RoundingMode.HALF_UP);
         }
     }
     public void setRentPerHour(BigDecimal rentPerHour){
