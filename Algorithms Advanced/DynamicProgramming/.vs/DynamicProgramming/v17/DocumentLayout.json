@@ -1,0 +1,75 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Asus\\source\\repos\\University-NBU-\\Algorithms Advanced\\DynamicProgramming\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DD6BC9B6-4C83-4747-86B7-9A71B9F66B68}|SequenceOfSmallBigNumbers\\SequenceOfSmallBigNumbers.vcxproj|C:\\Users\\Asus\\source\\repos\\University-NBU-\\Algorithms Advanced\\DynamicProgramming\\SequenceOfSmallBigNumbers\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{DD6BC9B6-4C83-4747-86B7-9A71B9F66B68}|SequenceOfSmallBigNumbers\\SequenceOfSmallBigNumbers.vcxproj|solutionrelative:SequenceOfSmallBigNumbers\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F365CDF-06F1-4754-933F-C514A24C83B9}|SumOfNumberDivisions\\SumOfNumberDivisions.vcxproj|C:\\Users\\Asus\\source\\repos\\University-NBU-\\Algorithms Advanced\\DynamicProgramming\\SumOfNumberDivisions\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{7F365CDF-06F1-4754-933F-C514A24C83B9}|SumOfNumberDivisions\\SumOfNumberDivisions.vcxproj|solutionrelative:SumOfNumberDivisions\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83B61311-E6F7-40AD-99DF-79C7A34D1600}|SumOfTwoSquares\\SumOfTwoSquares.vcxproj|C:\\Users\\Asus\\source\\repos\\University-NBU-\\Algorithms Advanced\\DynamicProgramming\\SumOfTwoSquares\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{83B61311-E6F7-40AD-99DF-79C7A34D1600}|SumOfTwoSquares\\SumOfTwoSquares.vcxproj|solutionrelative:SumOfTwoSquares\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Source.cpp",
+              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\University-NBU-\\Algorithms Advanced\\DynamicProgramming\\SequenceOfSmallBigNumbers\\Source.cpp",
+              "RelativeDocumentMoniker": "SequenceOfSmallBigNumbers\\Source.cpp",
+              "ToolTip": "C:\\Users\\Asus\\source\\repos\\University-NBU-\\Algorithms Advanced\\DynamicProgramming\\SequenceOfSmallBigNumbers\\Source.cpp",
+              "RelativeToolTip": "SequenceOfSmallBigNumbers\\Source.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACMAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-03-21T12:00:48.45Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Source.cpp",
+              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\University-NBU-\\Algorithms Advanced\\DynamicProgramming\\SumOfNumberDivisions\\Source.cpp",
+              "RelativeDocumentMoniker": "SumOfNumberDivisions\\Source.cpp",
+              "ToolTip": "C:\\Users\\Asus\\source\\repos\\University-NBU-\\Algorithms Advanced\\DynamicProgramming\\SumOfNumberDivisions\\Source.cpp",
+              "RelativeToolTip": "SumOfNumberDivisions\\Source.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACAAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-03-21T11:42:29.902Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Source.cpp",
+              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\University-NBU-\\Algorithms Advanced\\DynamicProgramming\\SumOfTwoSquares\\Source.cpp",
+              "RelativeDocumentMoniker": "SumOfTwoSquares\\Source.cpp",
+              "ToolTip": "C:\\Users\\Asus\\source\\repos\\University-NBU-\\Algorithms Advanced\\DynamicProgramming\\SumOfTwoSquares\\Source.cpp",
+              "RelativeToolTip": "SumOfTwoSquares\\Source.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-03-21T11:20:02.458Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
