@@ -1,12 +1,26 @@
 package shop;
 
-public class Goods {
+public abstract class Goods implements ProduceableAndSellable{
     private double overcharge;
 
-    public double productionPrice();
-    public double sellingPrice(){
-        return this.overcharge * this.productionPrice();
+    public Goods(double overcharge) {
+        this.overcharge = overcharge;
     }
 
+    public double getOvercharge() {
+        return overcharge;
+    }
 
+    public abstract double productionPrice();
+    @Override
+    public double sellingPrice(){
+        return ((this.overcharge/100) * this.productionPrice()) + this.productionPrice();
+    }
+
+    @Override
+    public String toString() {
+        return "Goods{" +
+                "overcharge=" + overcharge +
+                '}';
+    }
 }

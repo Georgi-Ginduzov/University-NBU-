@@ -16,22 +16,11 @@ public class Manufacturer {
     public String getName() {
         return name;
     }
-    public void setName(String name) {
-        this.name = name;
-    }
 
     public int hasAdditionalGuarantee() {
         return additionalGuarantee;
     }
     public void setAdditionalGuarantee(int additionalGuarantee) {
         this.additionalGuarantee = additionalGuarantee;
-    }
-
-    @Override
-    public String toString() {
-        return "Manufacturer{" +
-                "name='" + name + '\'' +
-                ", additionalGuarantee=" + additionalGuarantee +
-                '}';
     }
 }

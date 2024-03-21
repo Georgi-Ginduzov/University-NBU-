@@ -5,7 +5,7 @@ public class ElectricDevice extends Manufacturer{
 
     public ElectricDevice(Manufacturer object, int minimalWarranty) {
         super(object);
-        this.minimalWarranty = minimalWarranty;
+        setMinimalWarranty(minimalWarranty);
     }
 
     public int getMinimalWarranty() {
@@ -16,7 +16,8 @@ public class ElectricDevice extends Manufacturer{
         if (minimalWarranty >= 6){
             this.minimalWarranty = minimalWarranty;
         }
-
+        else
+            this.minimalWarranty = 6;
     }
 
     public int warranty(){
@@ -24,12 +25,5 @@ public class ElectricDevice extends Manufacturer{
             return getMinimalWarranty() + 12;
         else
             return getMinimalWarranty();
-    }
-
-    @Override
-    public String toString() {
-        return "ElectricDevice{" +
-                "minimalWarranty=" + minimalWarranty +
-                '}';
     }
 }

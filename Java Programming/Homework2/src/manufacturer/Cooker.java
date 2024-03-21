@@ -11,9 +11,6 @@ public class Cooker extends ElectricDevice{
     public int getIsGasoline() {
         return isGasoline;
     }
-    public void setGasoline(int gasoline) {
-        isGasoline = gasoline;
-    }
 
     @Override
     public int warranty() {
@@ -21,12 +18,5 @@ public class Cooker extends ElectricDevice{
             return super.warranty() + 12;
         else
             return super.warranty();
-    }
-
-    @Override
-    public String toString() {
-        return "Cooker{" +
-                "isGasoline=" + isGasoline +
-                '}';
     }
 }

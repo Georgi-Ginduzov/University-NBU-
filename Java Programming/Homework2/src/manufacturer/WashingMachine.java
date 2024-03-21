@@ -11,9 +11,6 @@ public class WashingMachine extends ElectricDevice{
     public int getCanDryClothes() {
         return canDryClothes;
     }
-    public void setCanDryClothes(int canDryClothes) {
-        this.canDryClothes = canDryClothes;
-    }
 
     @Override
     public int warranty(){
@@ -21,12 +18,5 @@ public class WashingMachine extends ElectricDevice{
             return super.warranty() + (int)(0.5 * getMinimalWarranty());
         else
             return super.warranty();
-    }
-
-    @Override
-    public String toString() {
-        return "WashingMachine{" +
-                "canDryClothes=" + canDryClothes +
-                '}';
     }
 }
