@@ -9,10 +9,23 @@ public class Material {
         this.fragile = fragile;
     }
 
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getFragile() {
+        return fragile;
+    }
+
+    public void setFragile(int fragile) {
+        this.fragile = fragile;
+    }
+
     public boolean isFragile(int input){
-        if (input == 1)
-            return true;
-        else
-            return false;
+        return input == 1;
     }
 }

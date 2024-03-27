@@ -1,6 +1,6 @@
 package delivery;
 
-public class DeliverableItem {
+public class DeliverableItem implements Deliverable{
     private int deliverToClient;
     private double additionalPrice;
 
@@ -8,8 +8,11 @@ public class DeliverableItem {
         this.deliverToClient = deliverToClient;
     }
 
-    public double deliveryPrice(){
-        // ToDo
+
+    @Override
+    public double deliveryPrice() {
+        //TOdo
+        double price = 0;
         return 0;
     }
 }
