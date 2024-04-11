@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="1b23a4cb-3e39-499a-b1de-dc630fefad8c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../StudentApplicationProcessClasswork/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../StudentApplicationProcessClasswork/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../StudentApplicationProcessClasswork/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../StudentApplicationProcessClasswork/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../StudentApplicationProcessClasswork/StudentApplicationProcessClasswork.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../StudentApplicationProcessClasswork/src/university/CourseType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../StudentApplicationProcessClasswork/src/university/Program.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../StudentApplicationProcessClasswork/src/university/ProgramType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../StudentApplicationProcessClasswork/src/university/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UnitTests.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/shapes/StageTriangles.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/shapes/StageTrianglesTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/shapes/Triangle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/shapes/TriangleTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/TriangleTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Algorithms Advanced/Homework1/.vs/Homework1/FileContentIndex/2f375f56-53f1-4f32-990b-0c1fee11175d.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Algorithms Advanced/Homework1/.vs/Homework1/v17/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/../../Algorithms Advanced/Homework1/.vs/Homework1/v17/.suo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Algorithms Advanced/Homework1/.vs/Homework1/v17/Browse.VC.db" beforeDir="false" afterPath="$PROJECT_DIR$/../../Algorithms Advanced/Homework1/.vs/Homework1/v17/Browse.VC.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Algorithms Advanced/Homework1/.vs/Homework1/v17/DocumentLayout.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../Algorithms Advanced/Homework1/.vs/Homework1/v17/DocumentLayout.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Algorithms Advanced/Homework1/.vs/Homework1/v17/ipch/AutoPCH/e2e361a77e1c149f/SOURCE.ipch" beforeDir="false" afterPath="$PROJECT_DIR$/../../Algorithms Advanced/Homework1/.vs/Homework1/v17/ipch/AutoPCH/e2e361a77e1c149f/SOURCE.ipch" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Algorithms Advanced/Homework1/MaxScalarProductOfMatrix/Source.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../Algorithms Advanced/Homework1/MaxScalarProductOfMatrix/Source.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Algorithms Advanced/SortingAlgorithms/.vs/SortingAlgorithms/FileContentIndex/db80a14f-2835-424e-8930-0ff7f8170ad8.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Algorithms Advanced/SortingAlgorithms/.vs/SortingAlgorithms/v17/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/../../Algorithms Advanced/SortingAlgorithms/.vs/SortingAlgorithms/v17/.suo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Algorithms Advanced/SortingAlgorithms/.vs/SortingAlgorithms/v17/Browse.VC.db" beforeDir="false" afterPath="$PROJECT_DIR$/../../Algorithms Advanced/SortingAlgorithms/.vs/SortingAlgorithms/v17/Browse.VC.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Algorithms Advanced/SortingAlgorithms/.vs/SortingAlgorithms/v17/DocumentLayout.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../Algorithms Advanced/SortingAlgorithms/.vs/SortingAlgorithms/v17/DocumentLayout.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Algorithms Advanced/SortingAlgorithms/.vs/SortingAlgorithms/v17/ipch/AutoPCH/b16646b4b41fa89a/SOURCE.ipch" beforeDir="false" afterPath="$PROJECT_DIR$/../../Algorithms Advanced/SortingAlgorithms/.vs/SortingAlgorithms/v17/ipch/AutoPCH/b16646b4b41fa89a/SOURCE.ipch" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Algorithms Advanced/SortingAlgorithms/SortingAlgorithms.sln" beforeDir="false" afterPath="$PROJECT_DIR$/../../Algorithms Advanced/SortingAlgorithms/SortingAlgorithms.sln" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="JUnit5 Test Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Georgi-Ginduzov&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Georgi-Ginduzov/University-NBU-.git&quot;,
+    &quot;accountId&quot;: &quot;6edefc97-ddd2-4a1a-a8d4-9abd7980f59f&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="2edQT0KJVuJzsMN4qbJYa0p93K9" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;JUnit.StageTrianglesTest.TrianglesWithPerimeterGreaterThan.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.StageTrianglesTest.totalPerimeter.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TriangleTest.perimeter.executor&quot;: &quot;Run&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;create.test.in.the.same.root&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/Asus/source/repos/University-NBU-/Java Programming/UnitTests/src/Main.java&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="shapes" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.StageTrianglesTest.TrianglesWithPerimeterGreaterThan">
+    <configuration name="StageTrianglesTest.TrianglesWithPerimeterGreaterThan" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="UnitTests" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="shapes.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="shapes" />
+      <option name="MAIN_CLASS_NAME" value="shapes.StageTrianglesTest" />
+      <option name="METHOD_NAME" value="TrianglesWithPerimeterGreaterThan" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StageTrianglesTest.totalPerimeter" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="UnitTests" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="shapes.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="shapes" />
+      <option name="MAIN_CLASS_NAME" value="shapes.StageTrianglesTest" />
+      <option name="METHOD_NAME" value="totalPerimeter" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TriangleTest.perimeter" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="UnitTests" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="test.TriangleTest" />
+      <option name="METHOD_NAME" value="perimeter" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.StageTrianglesTest.TrianglesWithPerimeterGreaterThan" />
+        <item itemvalue="JUnit.StageTrianglesTest.totalPerimeter" />
+        <item itemvalue="JUnit.TriangleTest.perimeter" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9f38398b9061-18abd8497189-intellij.indexing.shared.core-IU-241.14494.240" />
+        <option value="bundled-js-predefined-1d06a55b98c1-74d2a5396914-JavaScript-IU-241.14494.240" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1b23a4cb-3e39-499a-b1de-dc630fefad8c" name="Changes" comment="" />
+      <created>1712231980587</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1712231980587</updated>
+      <workItem from="1712231981609" duration="4157000" />
+      <workItem from="1712836060391" duration="292000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
