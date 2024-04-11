@@ -1,0 +1,4 @@
+﻿  Source.cpp
+C:\Users\Asus\source\repos\University-NBU-\Algorithms Advanced\FirstExam\SellingShares\Source.cpp(6,11): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Asus\source\repos\University-NBU-\Algorithms Advanced\FirstExam\SellingShares\Source.cpp(28,11): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  SellingShares.vcxproj -> C:\Users\Asus\source\repos\University-NBU-\Algorithms Advanced\FirstExam\x64\Debug\SellingShares.exe

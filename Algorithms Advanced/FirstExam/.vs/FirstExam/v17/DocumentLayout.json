@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Asus\\source\\repos\\University-NBU-\\Algorithms Advanced\\FirstExam\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B3ACD54F-E72B-4479-80E2-AD95AF880580}|DiceSumPossibilities\\DiceSumPossibilities.vcxproj|C:\\Users\\Asus\\source\\repos\\University-NBU-\\Algorithms Advanced\\FirstExam\\DiceSumPossibilities\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{B3ACD54F-E72B-4479-80E2-AD95AF880580}|DiceSumPossibilities\\DiceSumPossibilities.vcxproj|solutionrelative:DiceSumPossibilities\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABD6E3B5-7419-4137-A040-5DE65307B59B}|SellingShares\\SellingShares.vcxproj|C:\\Users\\Asus\\source\\repos\\University-NBU-\\Algorithms Advanced\\FirstExam\\SellingShares\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{ABD6E3B5-7419-4137-A040-5DE65307B59B}|SellingShares\\SellingShares.vcxproj|solutionrelative:SellingShares\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F3C5A5F0-3175-465A-AE6B-93006796523B}|SortNumbers\\SortNumbers.vcxproj|C:\\Users\\Asus\\source\\repos\\University-NBU-\\Algorithms Advanced\\FirstExam\\SortNumbers\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F3C5A5F0-3175-465A-AE6B-93006796523B}|SortNumbers\\SortNumbers.vcxproj|solutionrelative:SortNumbers\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Source.cpp",
+              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\University-NBU-\\Algorithms Advanced\\FirstExam\\DiceSumPossibilities\\Source.cpp",
+              "RelativeDocumentMoniker": "DiceSumPossibilities\\Source.cpp",
+              "ToolTip": "C:\\Users\\Asus\\source\\repos\\University-NBU-\\Algorithms Advanced\\FirstExam\\DiceSumPossibilities\\Source.cpp",
+              "RelativeToolTip": "DiceSumPossibilities\\Source.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-04-04T10:54:29.144Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Source.cpp",
+              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\University-NBU-\\Algorithms Advanced\\FirstExam\\SortNumbers\\Source.cpp",
+              "RelativeDocumentMoniker": "SortNumbers\\Source.cpp",
+              "ToolTip": "C:\\Users\\Asus\\source\\repos\\University-NBU-\\Algorithms Advanced\\FirstExam\\SortNumbers\\Source.cpp",
+              "RelativeToolTip": "SortNumbers\\Source.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-04-04T10:25:19.834Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Source.cpp",
+              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\University-NBU-\\Algorithms Advanced\\FirstExam\\SellingShares\\Source.cpp",
+              "RelativeDocumentMoniker": "SellingShares\\Source.cpp",
+              "ToolTip": "C:\\Users\\Asus\\source\\repos\\University-NBU-\\Algorithms Advanced\\FirstExam\\SellingShares\\Source.cpp",
+              "RelativeToolTip": "SellingShares\\Source.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACYAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-04-04T10:11:24.507Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
