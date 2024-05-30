@@ -1,3 +1,0 @@
-﻿  Source.cpp
-C:\Users\Asus\source\repos\University-NBU-\Algorithms Advanced\ClassworkGreedyAlgorithms\KnapsackProblem\Source.cpp(46,73): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
-  KnapsackProblem.vcxproj -> C:\Users\Asus\source\repos\University-NBU-\Algorithms Advanced\ClassworkGreedyAlgorithms\x64\Debug\KnapsackProblem.exe

@@ -1,9 +1,0 @@
-﻿  Source.cpp
-C:\Users\User\source\repos\AstralNumber\FarenheitToCelsiusViceVersa\Source.cpp(10,31): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-C:\Users\User\source\repos\AstralNumber\FarenheitToCelsiusViceVersa\Source.cpp(12,11): warning C4244: 'return': conversion from 'float' to 'int', possible loss of data
-C:\Users\User\source\repos\AstralNumber\FarenheitToCelsiusViceVersa\Source.cpp(18,11): warning C4244: 'return': conversion from 'double' to 'int', possible loss of data
-C:\Users\User\source\repos\AstralNumber\FarenheitToCelsiusViceVersa\Source.cpp(28,44): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\User\source\repos\AstralNumber\FarenheitToCelsiusViceVersa\Source.cpp(40,47): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\User\source\repos\AstralNumber\FarenheitToCelsiusViceVersa\Source.cpp(40,38): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\User\source\repos\AstralNumber\FarenheitToCelsiusViceVersa\Source.cpp(55,35): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-  FarenheitToCelsiusViceVersa.vcxproj -> C:\Users\User\source\repos\AstralNumber\x64\Debug\FarenheitToCelsiusViceVersa.exe

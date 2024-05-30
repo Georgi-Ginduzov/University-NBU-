@@ -1,5 +1,0 @@
-﻿  CalculateDistance.cpp
-C:\Users\User\source\repos\ClassCreation\ClassCreation\CalculateDistance.cpp(35,13): warning C4244: '*=': conversion from 'double' to 'int', possible loss of data
-  ClassCreation.cpp
-  Generating Code...
-  ClassCreation.vcxproj -> C:\Users\User\source\repos\ClassCreation\x64\Debug\ClassCreation.exe

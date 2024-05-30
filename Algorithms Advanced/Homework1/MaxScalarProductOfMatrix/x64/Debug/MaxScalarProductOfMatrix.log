@@ -1,3 +1,0 @@
-﻿  Source.cpp
-C:\Users\Asus\source\repos\University-NBU-\Algorithms Advanced\Homework1\MaxScalarProductOfMatrix\Source.cpp(40,15): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-  MaxScalarProductOfMatrix.vcxproj -> C:\Users\Asus\source\repos\University-NBU-\Algorithms Advanced\Homework1\x64\Debug\MaxScalarProductOfMatrix.exe

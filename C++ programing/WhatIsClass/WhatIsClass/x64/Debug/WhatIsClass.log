@@ -1,5 +1,0 @@
-﻿  keyboard.cpp
-  WhatIsClass.cpp
-C:\Users\User\source\repos\WhatIsClass\WhatIsClass\WhatIsClass.cpp(10,22): warning C4101: 'v': unreferenced local variable
-  Generating Code...
-  WhatIsClass.vcxproj -> C:\Users\User\source\repos\WhatIsClass\x64\Debug\WhatIsClass.exe

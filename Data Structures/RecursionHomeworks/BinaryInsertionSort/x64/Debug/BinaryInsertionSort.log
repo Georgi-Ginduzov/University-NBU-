@@ -1,3 +1,0 @@
-﻿  BinaryInsertionSort.cpp
-C:\Users\Asus\source\repos\University-NBU-\RecursionHomeworks\BinaryInsertionSort\BinaryInsertionSort.cpp(24,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-  BinaryInsertionSort.vcxproj -> C:\Users\Asus\source\repos\University-NBU-\RecursionHomeworks\x64\Debug\BinaryInsertionSort.exe

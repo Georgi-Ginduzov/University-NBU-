@@ -1,0 +1,104 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Asus\\source\\repos\\University-NBU-\\Algorithms Advanced\\Graphs\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C4995D1C-1A5B-4E22-AF10-D94186A6DBA9}|FLoydWarshal\\FLoydWarshal.vcxproj|C:\\Users\\Asus\\source\\repos\\University-NBU-\\Algorithms Advanced\\Graphs\\FLoydWarshal\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{C4995D1C-1A5B-4E22-AF10-D94186A6DBA9}|FLoydWarshal\\FLoydWarshal.vcxproj|solutionrelative:FLoydWarshal\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8ECBBBB5-07CA-4AD2-A18E-4FD97C7B8811}|Dijkstra\\Dijkstra.vcxproj|C:\\Users\\Asus\\source\\repos\\University-NBU-\\Algorithms Advanced\\Graphs\\Dijkstra\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{8ECBBBB5-07CA-4AD2-A18E-4FD97C7B8811}|Dijkstra\\Dijkstra.vcxproj|solutionrelative:Dijkstra\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6142A43-1078-407E-BFC5-BD285F78C4EE}|GraphRepresentations\\GraphRepresentations.vcxproj|C:\\Users\\Asus\\source\\repos\\University-NBU-\\Algorithms Advanced\\Graphs\\GraphRepresentations\\StartUp.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{C6142A43-1078-407E-BFC5-BD285F78C4EE}|GraphRepresentations\\GraphRepresentations.vcxproj|solutionrelative:GraphRepresentations\\StartUp.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F3FB13E-D6B6-4A41-A511-8F7C2CC3DECA}|ShortestPathIn2DArray\\ShortestPathIn2DArray.vcxproj|C:\\Users\\Asus\\source\\repos\\University-NBU-\\Algorithms Advanced\\Graphs\\ShortestPathIn2DArray\\StartUp.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{7F3FB13E-D6B6-4A41-A511-8F7C2CC3DECA}|ShortestPathIn2DArray\\ShortestPathIn2DArray.vcxproj|solutionrelative:ShortestPathIn2DArray\\StartUp.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Source.cpp",
+              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\University-NBU-\\Algorithms Advanced\\Graphs\\FLoydWarshal\\Source.cpp",
+              "RelativeDocumentMoniker": "FLoydWarshal\\Source.cpp",
+              "ToolTip": "C:\\Users\\Asus\\source\\repos\\University-NBU-\\Algorithms Advanced\\Graphs\\FLoydWarshal\\Source.cpp",
+              "RelativeToolTip": "FLoydWarshal\\Source.cpp",
+              "ViewState": "AQIAACoAAAAAAAAAAAAAADMAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-05-30T07:12:36.017Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Source.cpp",
+              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\University-NBU-\\Algorithms Advanced\\Graphs\\Dijkstra\\Source.cpp",
+              "RelativeDocumentMoniker": "Dijkstra\\Source.cpp",
+              "ToolTip": "C:\\Users\\Asus\\source\\repos\\University-NBU-\\Algorithms Advanced\\Graphs\\Dijkstra\\Source.cpp",
+              "RelativeToolTip": "Dijkstra\\Source.cpp",
+              "ViewState": "AQIAAFUAAAAAAAAAAAAcwIgAAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-05-23T07:02:48.398Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "StartUp.cpp",
+              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\University-NBU-\\Algorithms Advanced\\Graphs\\GraphRepresentations\\StartUp.cpp",
+              "RelativeDocumentMoniker": "GraphRepresentations\\StartUp.cpp",
+              "ToolTip": "C:\\Users\\Asus\\source\\repos\\University-NBU-\\Algorithms Advanced\\Graphs\\GraphRepresentations\\StartUp.cpp",
+              "RelativeToolTip": "GraphRepresentations\\StartUp.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-05-13T13:05:36.152Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "StartUp.cpp",
+              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\University-NBU-\\Algorithms Advanced\\Graphs\\ShortestPathIn2DArray\\StartUp.cpp",
+              "RelativeDocumentMoniker": "ShortestPathIn2DArray\\StartUp.cpp",
+              "ToolTip": "C:\\Users\\Asus\\source\\repos\\University-NBU-\\Algorithms Advanced\\Graphs\\ShortestPathIn2DArray\\StartUp.cpp",
+              "RelativeToolTip": "ShortestPathIn2DArray\\StartUp.cpp",
+              "ViewState": "AQIAACAAAAAAAAAAAAAAACoAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-05-09T10:24:37.07Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

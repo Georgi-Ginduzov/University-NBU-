@@ -1,3 +1,0 @@
-﻿  FindDevisor.cpp
-C:\Users\User\source\repos\KirkovExaminationOne\FindDevisor\FindDevisor.cpp(25,11): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
-  FindDevisor.vcxproj -> C:\Users\User\source\repos\KirkovExaminationOne\x64\Debug\FindDevisor.exe

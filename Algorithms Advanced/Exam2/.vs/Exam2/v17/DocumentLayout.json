@@ -1,0 +1,89 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Asus\\source\\repos\\University-NBU-\\Algorithms Advanced\\Exam2\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5F24266C-A577-41BF-904E-047F75771FD5}|FindTheNumberOfIslands\\FindTheNumberOfIslands.vcxproj|C:\\Users\\Asus\\source\\repos\\University-NBU-\\Algorithms Advanced\\Exam2\\FindTheNumberOfIslands\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{5F24266C-A577-41BF-904E-047F75771FD5}|FindTheNumberOfIslands\\FindTheNumberOfIslands.vcxproj|solutionrelative:FindTheNumberOfIslands\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DC41539-E758-41FB-AAAB-5D63DD953D1D}|FindPathFromBeginningToEnd\\FindPathFromBeginningToEnd.vcxproj|C:\\Users\\Asus\\source\\repos\\University-NBU-\\Algorithms Advanced\\Exam2\\FindPathFromBeginningToEnd\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{0DC41539-E758-41FB-AAAB-5D63DD953D1D}|FindPathFromBeginningToEnd\\FindPathFromBeginningToEnd.vcxproj|solutionrelative:FindPathFromBeginningToEnd\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3CC7C480-B801-40F0-B48A-25DF80A2B301}|SumOfWeightsOfGraph\\SumOfWeightsOfGraph.vcxproj|C:\\Users\\Asus\\source\\repos\\University-NBU-\\Algorithms Advanced\\Exam2\\SumOfWeightsOfGraph\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{3CC7C480-B801-40F0-B48A-25DF80A2B301}|SumOfWeightsOfGraph\\SumOfWeightsOfGraph.vcxproj|solutionrelative:SumOfWeightsOfGraph\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Source.cpp",
+              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\University-NBU-\\Algorithms Advanced\\Exam2\\FindTheNumberOfIslands\\Source.cpp",
+              "RelativeDocumentMoniker": "FindTheNumberOfIslands\\Source.cpp",
+              "ToolTip": "C:\\Users\\Asus\\source\\repos\\University-NBU-\\Algorithms Advanced\\Exam2\\FindTheNumberOfIslands\\Source.cpp",
+              "RelativeToolTip": "FindTheNumberOfIslands\\Source.cpp",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAIwD4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-05-16T11:15:57.633Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Source.cpp",
+              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\University-NBU-\\Algorithms Advanced\\Exam2\\FindPathFromBeginningToEnd\\Source.cpp",
+              "RelativeDocumentMoniker": "FindPathFromBeginningToEnd\\Source.cpp",
+              "ToolTip": "C:\\Users\\Asus\\source\\repos\\University-NBU-\\Algorithms Advanced\\Exam2\\FindPathFromBeginningToEnd\\Source.cpp",
+              "RelativeToolTip": "FindPathFromBeginningToEnd\\Source.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADUAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-05-16T10:33:25.015Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Source.cpp",
+              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\University-NBU-\\Algorithms Advanced\\Exam2\\SumOfWeightsOfGraph\\Source.cpp",
+              "RelativeDocumentMoniker": "SumOfWeightsOfGraph\\Source.cpp",
+              "ToolTip": "C:\\Users\\Asus\\source\\repos\\University-NBU-\\Algorithms Advanced\\Exam2\\SumOfWeightsOfGraph\\Source.cpp",
+              "RelativeToolTip": "SumOfWeightsOfGraph\\Source.cpp",
+              "ViewState": "AQIAABQAAAAAAAAAAAAIwE4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-05-16T10:09:50.735Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
