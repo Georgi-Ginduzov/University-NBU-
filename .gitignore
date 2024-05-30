@@ -1,4 +1,4 @@
-# Ignore all binary files
+# Ignore all binary files for C++ projects
 *.exe
 *.dll
 *.so
@@ -9,7 +9,7 @@
 *.a
 *.pdb
 
-# Ignore build directories
+# Ignore build directories for C++ projects
 /build/
 /bin/
 /out/
@@ -69,3 +69,70 @@ compile_commands.json
 # Ignore other IDE-specific files
 /.vscode/
 /.idea/
+
+# Ignore binary files for Java projects
+*.class
+*.jar
+*.war
+*.ear
+
+# Ignore build directories for Java projects
+/build/
+/target/
+
+# Ignore Maven files
+.mvn/
+**/target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+
+# Ignore Gradle files
+.gradle/
+/build/
+!gradle-wrapper.jar
+
+# Ignore Eclipse files
+.metadata
+.classpath
+.project
+.settings/
+bin/
+tmp/
+
+# Ignore IntelliJ IDEA files
+.idea/
+/*.iws
+/*.iml
+/*.ipr
+/out/
+
+# Ignore NetBeans files
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+# Ignore temporary files for Java
+*.tmp
+*.log
+*.bak
+*.swp
+*~
+
+# Ignore compiled code
+**/build/
+**/out/
+**/*.log
+
+# Ignore JetBrains IDEs
+.idea/
+*.iws
+*.iml
+*.ipr
+
+# Ignore VS Code files
+.vscode/
