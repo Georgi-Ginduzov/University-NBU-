@@ -1,16 +1,71 @@
-
-
-!*.csproj
-!*.sln
-!*.cs
-
-bin/
-obj/
-.vscode/
-*.user
-*.suo
+# Ignore all binary files
+*.exe
+*.dll
+*.so
+*.dylib
+*.o
+*.obj
+*.lib
+*.a
 *.pdb
-*.cache
+
+# Ignore build directories
+/build/
+/bin/
+/out/
+/Debug/
+/Release/
+
+# Ignore temporary files
+*.tmp
 *.log
-*.ide
-*.sln.docstates
+
+# Ignore editor-specific files
+*.swp
+*.swo
+*.swn
+*~
+*.bak
+*.orig
+*.backup
+
+# Ignore Visual Studio files
+*.sdf
+*.vcxproj.user
+*.vcxproj.filters
+*.ipch/
+*.opensdf
+*.tlog/
+*.lastbuildstate
+*.suo
+*.user
+*.ncb
+*.aps
+*.pch
+*.vspscc
+*.vssscc
+*.csproj.user
+
+# Ignore Xcode files
+*.mode1v3
+*.mode2v3
+*.pbxuser
+*.xcworkspace
+xcuserdata/
+profile
+*.moved-aside
+DerivedData/
+.idea/
+
+# Ignore CMake files
+CMakeFiles/
+CMakeCache.txt
+CMakeScripts/
+Testing/
+Makefile
+cmake_install.cmake
+compile_commands.json
+
+# Ignore other IDE-specific files
+/.vscode/
+/.idea/
