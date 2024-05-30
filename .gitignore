@@ -1,0 +1,16 @@
+
+
+!*.csproj
+!*.sln
+!*.cs
+
+bin/
+obj/
+.vscode/
+*.user
+*.suo
+*.pdb
+*.cache
+*.log
+*.ide
+*.sln.docstates
