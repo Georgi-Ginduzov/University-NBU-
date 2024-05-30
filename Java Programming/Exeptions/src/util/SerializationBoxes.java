@@ -19,7 +19,7 @@ public class SerializationBoxes {
     public static BoxWithWeight deserializeBox(String filePath) throws ClassNotFoundException, IOException{
         try (FileInputStream fileInputStream = new FileInputStream(filePath);
         ObjectInputStream objectInputStream = new ObjectInputStream(fileInputStream){
-        return (BoxWithWeight) objectInputStream.readObject();
+        //return (BoxWithWeight) objectInputStream.readObject();
 
 
         } catch (FileNotFoundException e) {

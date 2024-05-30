@@ -1,2 +1,5 @@
-package data;public enum CourseType {
+package data;
+
+public enum CourseType {
+    REQUIRED, ELECTIVE
 }

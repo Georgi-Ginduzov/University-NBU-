@@ -1,2 +1,5 @@
-package org.example.service;public class DeliveryServiceImpl {
+package org.example.service.implementations;
+
+public class DeliveryServiceImpl {
+
 }

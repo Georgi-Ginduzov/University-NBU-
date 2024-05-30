@@ -1,0 +1,38 @@
+package org.nbu;
+
+import org.nbu.data.items.Clothes;
+import org.nbu.data.items.Detail;
+import org.nbu.data.items.Shoes;
+import org.nbu.data.items.enums.ClothesType;
+import org.nbu.data.items.enums.DifficultyLevel;
+import org.nbu.data.items.enums.ShoesType;
+import org.nbu.data.materials.Fabric;
+import org.nbu.data.materials.Leather;
+import org.nbu.data.materials.Material;
+
+import java.util.List;
+
+public class Main {
+    public static void main(String[] args) {
+        Material material = new Material("Rubber");
+        Leather leather = new Leather("Leather", false);
+        Fabric fabric = new Fabric("Silk", true);
+
+        Detail detail1 = new Detail("Sleeve", fabric, DifficultyLevel.HIGH);
+        Detail detail2 = new Detail("Front Part", fabric, DifficultyLevel.LOW);
+        Detail detail3 = new Detail("Back Part", fabric, DifficultyLevel.LOW);
+
+        List<Detail> clothesDetails = List.of(detail1, detail2, detail3);
+        Clothes clothes = new Clothes(clothesDetails, ClothesType.SHIRT);
+
+        Detail detail4 = new Detail("Upper Part", leather, DifficultyLevel.MEDIUM);
+        Detail detail5 = new Detail("Lower Part", material, DifficultyLevel.MEDIUM);
+
+        List<Detail> shoesDetails = List.of(detail4, detail5);
+        Shoes shoes = new Shoes(shoesDetails, ShoesType.SNEAKERS);
+
+        System.out.println(clothes);
+        System.out.println();
+        System.out.println(shoes);
+    }
+}

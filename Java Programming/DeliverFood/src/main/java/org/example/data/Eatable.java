@@ -1,2 +1,4 @@
-package org.example.data;public interface Eatable {
+package org.example.data;
+
+public interface Eatable {
 }
