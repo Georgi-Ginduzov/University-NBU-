@@ -1,5 +1,6 @@
 package main.java.store.data.enums;
 
-public enum FoodType {
-    
+public enum GoodType {
+    EDIBLE,
+    NONEDIBLE
 }
