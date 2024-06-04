@@ -1,19 +1,20 @@
 package main.java.store.data;
 
 import main.java.store.data.enums.GoodType;
+import main.java.store.data.interfaces.Good;
 
 import java.util.Date;
 import java.util.UUID;
 
-public class Good{
+public abstract class Product implements Good {
     private final UUID id; // uuid
     private final String name;
-    private double unitDeliveryPrice;
+    private final double unitDeliveryPrice;
     private final GoodType type;
     private final Date expirationDate;
     private int quantity;
 
-    public Good(String name, double unitDeliveryPrice, GoodType type, Date expirationDate, int quantity) {
+    public Product(String name, double unitDeliveryPrice, GoodType type, Date expirationDate, int quantity) {
         this.id = UUID.randomUUID();
         this.name = name;
         this.unitDeliveryPrice = unitDeliveryPrice;
@@ -22,24 +23,27 @@ public class Good{
         this.quantity = quantity;
     }
 
+    @Override
     public UUID getId() {
         return id;
     }
 
+    @Override
     public String getName() {
         return name;
     }
 
+    @Override
     public double getUnitDeliveryPrice() {
         return unitDeliveryPrice;
     }
 
+    @Override
     public GoodType getType() {
         return type;
     }
 
-
-
+    @Override
     public Date getExpirationDate() {
         return expirationDate;
     }

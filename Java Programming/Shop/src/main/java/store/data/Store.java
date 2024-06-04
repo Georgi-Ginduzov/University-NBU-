@@ -6,7 +6,7 @@ import main.java.store.data.exceptions.InsufficientQuantityException;
 import java.util.*;
 
 public class Store {
-    private Set<Good> inventory;
+    private Set<Product> inventory;
     private List<Cashier> cashiers;
     private List<CashDesk> cashDesks;
     private final double foodTurnover;
@@ -14,7 +14,8 @@ public class Store {
     private List<Receipt> receipts;
     private double stockDeliverySpendings;
 
-    public Store(double foodTurnover, double nonFoodTurnover) {
+    public Store(double foodTurnover, double nonFoodTurnover) // StoreBuilder
+    {
         this.inventory = new HashSet<>();
         this.cashiers = new ArrayList<>();
         this.cashDesks = new ArrayList<>();
@@ -24,9 +25,18 @@ public class Store {
         stockDeliverySpendings = 0;
     }
 
-    public void addGoods(List<Good> goods) {
-        for (Good item : goods) {
-            Good itemFromInventory = findGoodByName(item.getName());
+    public void beginWorkDay(){
+        int i = 0;
+
+        for(CashDesk cashDesk : cashDesks){
+            Cashier suitableCashier = findCashierForCashdesk();
+            cashDesk.setCurrentStaff(suitableCashier);
+        }
+    }
+
+    public void addGoods(List<Product> products) {
+        for (Product item : products) {
+            Product itemFromInventory = findGoodByName(item.getName());
 
             if(itemFromInventory != null) {
                 int itemQuantity = item.getQuantity();
@@ -48,20 +58,20 @@ public class Store {
         this.cashDesks.add(cashDesk);
     }
 
-    public Receipt processPurchase(Customer customer, List<PurchaseItem> purchaseItems) throws InsufficientQuantityException, InsufficientBalanceException {
+    public Receipt processPurchase(Customer customer, List<CartItem> purchaseItems) throws InsufficientQuantityException, InsufficientBalanceException {
         double totalAmount = 0;
 
-        for (PurchaseItem item : purchaseItems) {
-            Good good = findGoodByName(item.getName());
-            if (good == null || good.getQuantity() < item.getQuantity()) {
-                throw new InsufficientQuantityException(good, item.getQuantity());
+        for (CartItem item : purchaseItems) {
+            Product product = findGoodByName(item.getName());
+            if (product == null || product.getQuantity() < item.getQuantity()) {
+                throw new InsufficientQuantityException(product, item.getQuantity());
             }
-            double sellingPrice = good.getSellingPrice(5, 0.3, 3);
+            double sellingPrice = product.getSellingPrice(5, 0.3, 3);
             if (sellingPrice > 0) {
                 totalAmount +=  sellingPrice * item.getQuantity();
             }
             else {
-                System.out.println(good.getName() + " is expired! It cannot be sold.");
+                System.out.println(product.getName() + " is expired! It cannot be sold.");
             }
         }
 
@@ -69,26 +79,27 @@ public class Store {
             throw new InsufficientBalanceException(customer, totalAmount);
         }
 
-        Receipt receipt = new Receipt(generateReceiptId(), findCashierByCustomer(customer), new Date(), purchaseItems);
+        Receipt receipt = new Receipt(generateReceiptId(), cashiers.getFirst() , new Date(), purchaseItems);
+        // TODO: implementation of purchasing items
         this.receipts.add(receipt);
         updateInventory(purchaseItems);
         customer.decreaseBalance(totalAmount);
         return receipt;
     }
 
-    private void updateInventory(List<PurchaseItem> purchaseItems) {
-        for (PurchaseItem item : purchaseItems) {
-            Good goods = findGoodByName(item.getName());
+    private void updateInventory(List<CartItem> purchaseItems) {
+        for (CartItem item : purchaseItems) {
+            Product goods = findGoodByName(item.getName());
             if (goods != null) {
                 goods.decreaseQuantity(item.getQuantity());
             }
         }
     }
 
-    private Good findGoodByName(String name) {
-        for (Good good : inventory) {
-            if (good.getName().equals(name)) {
-                return good;
+    private Product findGoodByName(String name) {
+        for (Product product : inventory) {
+            if (product.getName().equals(name)) {
+                return product;
             }
         }
 
@@ -99,8 +110,15 @@ public class Store {
         return receipts.size();
     }
 
-    private Cashier findCashierByCustomer(Customer customer) {
-        return this.cashiers.get(0);
+    public Cashier findCashierForCashdesk() {
+        Cashier desiredCashier = null;
+        for (Cashier cashier : cashiers) {
+            if (cashier.isOccupied()) {
+                continue;
+            }
+            desiredCashier = cashier;
+        }
+        return desiredCashier;
     }
 
     public double calculateProfit() {
@@ -122,11 +140,6 @@ public class Store {
         }
         return totalPurchases;
     }
-
-
-
-
-
 
 
     private double getProfit() {

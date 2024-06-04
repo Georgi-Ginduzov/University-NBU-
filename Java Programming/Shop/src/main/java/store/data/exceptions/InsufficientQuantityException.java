@@ -1,9 +1,10 @@
 package main.java.store.data.exceptions;
 
-import main.java.store.data.Good;
+import main.java.store.data.Product;
+import main.java.store.data.interfaces.Good;
 
 public class InsufficientQuantityException extends Exception {
-    public InsufficientQuantityException(Good goods, int requiredQuantity) {
-        super("Insufficient quantity for goods: " + goods.getName() + ". Required: " + requiredQuantity + ", Available: " + goods.getQuantity());
+    public InsufficientQuantityException(Good good, int requiredQuantity) {
+        super("Insufficient quantity for goods: " + good.getName() + ". Required: " + requiredQuantity + ", Available: " + good.getQuantity());
     }
 }

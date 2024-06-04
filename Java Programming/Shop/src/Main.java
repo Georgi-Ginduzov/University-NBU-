@@ -1,6 +1,6 @@
 import main.java.store.data.*;
 import main.java.store.data.enums.GoodType;
-import main.java.store.data.PurchaseItem;
+import main.java.store.data.CartItem;
 
 import java.util.ArrayList;
 import java.util.Date;
@@ -8,12 +8,31 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
+        Store lidl = makeStore();
+
+        lidl.beginWorkDay();
+
+        // TODO: Make customers
+
+
+        //TODO: Make some purchases
+
+        //TODO: End workday
+            // Order products
+            // Shop is cleaned
+            // Cashiers are not busy
+
+
+
+    }
+
+    public static Store makeStore() {
         // Initialize the store with food and non-food turnover percentages
         Store store = new Store(1.2, 1.5); // Example turnover percentages
 
         // Add cashiers to the store
-        Cashier cashier1 = new Cashier("John Doe", 1000);
-        Cashier cashier2 = new Cashier("Jane Smith", 1000);
+        Cashier cashier1 = new Cashier("John Doe");
+        Cashier cashier2 = new Cashier("Jane Smith");
         store.addCashier(cashier1);
         store.addCashier(cashier2);
 
@@ -24,19 +43,19 @@ public class Main {
         store.addCashDesk(cashDesk2);
 
         // Add goods to the store inventory
-        List<Good> goods = new ArrayList<>();
-        goods.add(new Good( "Milk", 1.0, GoodType.EDIBLE, new Date(System.currentTimeMillis() + 86400000 * 10), 100)); // Expires in 10 days
-        goods.add(new Good("Bread", 0.5, GoodType.EDIBLE, new Date(System.currentTimeMillis() + 86400000 * 5), 50));  // Expires in 5 days
-        goods.add(new Good( "Soap", 2.0, GoodType.NONEDIBLE, new Date(System.currentTimeMillis() + 86400000 * 30), 30)); // Expires in 30 days
-        store.addGoods(goods);
+        List<Product> products = new ArrayList<>();
+        products.add(new Product( "Milk", 1.0, GoodType.EDIBLE, new Date(System.currentTimeMillis() + 86400000 * 10), 100)); // Expires in 10 days
+        products.add(new Product("Bread", 0.5, GoodType.EDIBLE, new Date(System.currentTimeMillis() + 86400000 * 5), 50));  // Expires in 5 days
+        products.add(new Product( "Soap", 2.0, GoodType.NONEDIBLE, new Date(System.currentTimeMillis() + 86400000 * 30), 30)); // Expires in 30 days
+        store.addGoods(products);
 
         // Create a customer
         Customer customer = new Customer("Alice", 50.0);
 
         // Create a list of purchase items
-        List<PurchaseItem> purchaseItems = new ArrayList<>();
-        purchaseItems.add(new PurchaseItem(1, 2, "Milk"));
-        purchaseItems.add(new PurchaseItem(2, 2, "Bread"));
+        List<CartItem> purchaseItems = new ArrayList<>();
+        purchaseItems.add(new CartItem(1, 2, "Milk"));
+        purchaseItems.add(new CartItem(2, 2, "Bread"));
 
         // Process the purchase and generate a receipt
         try {
@@ -52,6 +71,6 @@ public class Main {
         // Display the store's profit
         System.out.println("Store profit: " + store.calculateProfit());
 
-
+        return store;
     }
 }

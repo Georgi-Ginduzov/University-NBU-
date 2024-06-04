@@ -7,14 +7,14 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
 
-public class Receipt {
+public final class Receipt {
     private final int serialNumber;
     private final Cashier cashier;
     private final Date dateTime;
-    private final List<PurchaseItem> purchaseItems;
+    private final List<CartItem> purchaseItems;
     private final double total;
 
-    public Receipt(int serialNumber, Cashier cashier, Date dateTime, List<PurchaseItem> purchaseItems) {
+    public Receipt(int serialNumber, Cashier cashier, Date dateTime, List<CartItem> purchaseItems) {
         this.serialNumber = serialNumber;
         this.cashier = cashier;
         this.dateTime = dateTime;
@@ -25,18 +25,6 @@ public class Receipt {
 
     public int getSerialNumber() {
         return serialNumber;
-    }
-
-    public Cashier getCashier() {
-        return cashier;
-    }
-
-    public Date getDateTime() {
-        return dateTime;
-    }
-
-    public List<PurchaseItem> getPurchaseItems() {
-        return purchaseItems;
     }
 
     public double getTotal() {
@@ -63,7 +51,7 @@ public class Receipt {
             writer.write("-------------------------------------------" + "\n");
             writer.write(String.format("%-20s %10s %10s\n", "Item", "Quantity", "Price"));
             writer.write("-------------------------------------------" + "\n");
-            for (PurchaseItem item : purchaseItems) {
+            for (CartItem item : purchaseItems) {
                 writer.write(String.format("%-20s %10d %10.2f\n", item.getName(), item.getQuantity(), item.getPrice()));
             }
             writer.write("-------------------------------------------" + "\n");
@@ -79,7 +67,7 @@ public class Receipt {
 
     private double calculateTotal(){
         double total = 0;
-        for (PurchaseItem item : purchaseItems) {
+        for (CartItem item : purchaseItems) {
             total += item.getPrice();
         }
 
