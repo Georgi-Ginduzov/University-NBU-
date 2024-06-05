@@ -1,6 +1,8 @@
 package main.java.store.data.interfaces;
 
-public interface Staff {
+import java.io.Serializable;
+
+public interface Staff extends Serializable {
     String getName();
     double getSalary();
     boolean isOccupied();

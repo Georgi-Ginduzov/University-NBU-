@@ -1,6 +1,8 @@
 package main.java.store.data.interfaces;
 
-public interface StoreEquipment {
+import java.io.Serializable;
+
+public interface StoreEquipment extends Serializable {
     Staff getCurrentStaff();
     void setCurrentStaff(Staff staff);
     void changeOccupation();

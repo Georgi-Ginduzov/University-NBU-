@@ -2,20 +2,25 @@ package main.java.store.data;
 
 import main.java.store.data.exceptions.InsufficientBalanceException;
 import main.java.store.data.exceptions.InsufficientQuantityException;
+import main.java.store.data.interfaces.Good;
+import main.java.store.data.interfaces.Staff;
+import main.java.store.data.interfaces.StoreEntity;
 
 import java.util.*;
 
-public class Store {
-    private Set<Product> inventory;
-    private List<Cashier> cashiers;
-    private List<CashDesk> cashDesks;
+public class Store implements StoreEntity {
+    private UUID id;
+    private Set<Good> inventory;
+    private List<Staff> cashiers;
+    private List<Equipment> cashDesks;
     private final double foodTurnover;
     private final  double nonFoodTurnover;
     private List<Receipt> receipts;
     private double stockDeliverySpendings;
 
-    public Store(double foodTurnover, double nonFoodTurnover) // StoreBuilder
+    public Store(double foodTurnover, double nonFoodTurnover) // TODO: StoreBuilder
     {
+        this.id = UUID.randomUUID();
         this.inventory = new HashSet<>();
         this.cashiers = new ArrayList<>();
         this.cashDesks = new ArrayList<>();
@@ -25,18 +30,47 @@ public class Store {
         stockDeliverySpendings = 0;
     }
 
+    @Override
+    public Set<Good> getInventory() {
+        return inventory;
+    }
+
+    @Override
+    public List<Staff> getCashiers() {
+        return cashiers;
+    }
+
+    @Override
+    public List<Equipment> getCashDesks() {
+        return cashDesks;
+    }
+
+    @Override
+    public List<Receipt> getReceipts() {
+        return receipts;
+    }
+
+    @Override
+    public double getStockDeliverySpendings() {
+        return stockDeliverySpendings;
+    }
+
+    public UUID getId() {
+        return id;
+    }
+
     public void beginWorkDay(){
         int i = 0;
 
-        for(CashDesk cashDesk : cashDesks){
-            Cashier suitableCashier = findCashierForCashdesk();
+        for(Equipment cashDesk : cashDesks){
+            Staff suitableCashier = findCashierForCashdesk();
             cashDesk.setCurrentStaff(suitableCashier);
         }
     }
 
     public void addGoods(List<Product> products) {
         for (Product item : products) {
-            Product itemFromInventory = findGoodByName(item.getName());
+            Good itemFromInventory = findGoodByName(item.getName());
 
             if(itemFromInventory != null) {
                 int itemQuantity = item.getQuantity();
@@ -62,7 +96,7 @@ public class Store {
         double totalAmount = 0;
 
         for (CartItem item : purchaseItems) {
-            Product product = findGoodByName(item.getName());
+            Good product = findGoodByName(item.getName());
             if (product == null || product.getQuantity() < item.getQuantity()) {
                 throw new InsufficientQuantityException(product, item.getQuantity());
             }
@@ -79,7 +113,7 @@ public class Store {
             throw new InsufficientBalanceException(customer, totalAmount);
         }
 
-        Receipt receipt = new Receipt(generateReceiptId(), cashiers.getFirst() , new Date(), purchaseItems);
+        Receipt receipt = new Receipt(generateReceiptId(), new Cashier("Not implemented well") , new Date(), purchaseItems);
         // TODO: implementation of purchasing items
         this.receipts.add(receipt);
         updateInventory(purchaseItems);
@@ -89,15 +123,15 @@ public class Store {
 
     private void updateInventory(List<CartItem> purchaseItems) {
         for (CartItem item : purchaseItems) {
-            Product goods = findGoodByName(item.getName());
-            if (goods != null) {
-                goods.decreaseQuantity(item.getQuantity());
+            Good good = findGoodByName(item.getName());
+            if (good != null) {
+                good.decreaseQuantity(item.getQuantity());
             }
         }
     }
 
-    private Product findGoodByName(String name) {
-        for (Product product : inventory) {
+    private Good findGoodByName(String name) {
+        for (Good product : inventory) {
             if (product.getName().equals(name)) {
                 return product;
             }
@@ -110,9 +144,9 @@ public class Store {
         return receipts.size();
     }
 
-    public Cashier findCashierForCashdesk() {
-        Cashier desiredCashier = null;
-        for (Cashier cashier : cashiers) {
+    public Staff findCashierForCashdesk() {
+        Staff desiredCashier = null;
+        for (Staff cashier : cashiers) {
             if (cashier.isOccupied()) {
                 continue;
             }
@@ -121,26 +155,27 @@ public class Store {
         return desiredCashier;
     }
 
-    public double calculateProfit() {
-        return calculateTotalPurchases() - (this.stockDeliverySpendings + calculateTotalSalaries());
+    @Override
+    public double getTotalEarnings() {
+        return getCustomerTotalPurchases() - (this.stockDeliverySpendings + getTotalSalaries());
     }
 
-    public double calculateTotalSalaries() {
+    @Override
+    public double getTotalSalaries() {
         double totalSalaries = 0;
-        for (Cashier cashier : cashiers) {
+        for (Staff cashier : cashiers) {
             totalSalaries += cashier.getSalary();
         }
         return totalSalaries;
     }
 
-    public double calculateTotalPurchases() {
+    public double getCustomerTotalPurchases() {
         double totalPurchases = 0;
         for (Receipt receipt : this.receipts) {
             totalPurchases += receipt.getTotal();
         }
         return totalPurchases;
     }
-
 
     private double getProfit() {
         double total = 0;
@@ -150,9 +185,6 @@ public class Store {
         return total;
     }
 
-    public int getReceiptCount() {
-        return receipts.size();
-    }
 
     public double getFoodTurnover() {
         return foodTurnover;

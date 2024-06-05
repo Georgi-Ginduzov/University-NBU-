@@ -1,9 +1,9 @@
 -------------------------------------------
-              STORE RECEIPT                
+               STORE RECEIPT                
 -------------------------------------------
 Receipt Serial Number: 0
-Cashier: John Doe
-Date: 2024-05-31 20:35:03
+Cashier: Not implemented well
+Date: 2024-06-05 12:18:26
 -------------------------------------------
 Item                   Quantity      Price
 -------------------------------------------

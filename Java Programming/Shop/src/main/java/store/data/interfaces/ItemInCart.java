@@ -1,6 +1,8 @@
 package main.java.store.data.interfaces;
 
-public interface ItemInCart {
+import java.io.Serializable;
+
+public interface ItemInCart extends Serializable {
     int getQuantity();
     double getPrice();
     String getName();

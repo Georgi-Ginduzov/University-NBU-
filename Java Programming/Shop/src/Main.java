@@ -1,19 +1,23 @@
 import main.java.store.data.*;
 import main.java.store.data.enums.GoodType;
 import main.java.store.data.CartItem;
+import main.java.store.service.SerializationImpl;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
 public class Main {
-    public static void main(String[] args) {
-        Store lidl = makeStore();
+    public static void main(String[] args) throws IOException, ClassNotFoundException {
+        SerializationImpl serialization = new SerializationImpl();
+        Store lidl = (Store)serialization.load("src/main/java/store/data/database/Store_Lidl");
 
-        lidl.beginWorkDay();
+        System.out.println(lidl.getId());
+        //lidl.beginWorkDay();
+
 
         // TODO: Make customers
-
 
         //TODO: Make some purchases
 
@@ -44,9 +48,9 @@ public class Main {
 
         // Add goods to the store inventory
         List<Product> products = new ArrayList<>();
-        products.add(new Product( "Milk", 1.0, GoodType.EDIBLE, new Date(System.currentTimeMillis() + 86400000 * 10), 100)); // Expires in 10 days
-        products.add(new Product("Bread", 0.5, GoodType.EDIBLE, new Date(System.currentTimeMillis() + 86400000 * 5), 50));  // Expires in 5 days
-        products.add(new Product( "Soap", 2.0, GoodType.NONEDIBLE, new Date(System.currentTimeMillis() + 86400000 * 30), 30)); // Expires in 30 days
+        products.add(new Food( "Milk", 1.0, GoodType.EDIBLE, new Date(System.currentTimeMillis() + 86400000 * 10), 100)); // Expires in 10 days
+        products.add(new Food("Bread", 0.5, GoodType.EDIBLE, new Date(System.currentTimeMillis() + 86400000 * 5), 50));  // Expires in 5 days
+        products.add(new Food( "Soap", 2.0, GoodType.NONEDIBLE, new Date(System.currentTimeMillis() + 86400000 * 30), 30)); // Expires in 30 days
         store.addGoods(products);
 
         // Create a customer
@@ -69,7 +73,7 @@ public class Main {
         }
 
         // Display the store's profit
-        System.out.println("Store profit: " + store.calculateProfit());
+        System.out.println("Store profit: " + store.getTotalEarnings());
 
         return store;
     }

@@ -3,11 +3,12 @@ package main.java.store.data;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.io.Serializable;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
 
-public final class Receipt {
+public final class Receipt implements Serializable {
     private final int serialNumber;
     private final Cashier cashier;
     private final Date dateTime;
@@ -63,6 +64,31 @@ public final class Receipt {
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
+
+    @Override
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        sb.append("-------------------------------------------" + "\n");
+        sb.append("               STORE RECEIPT                \n");
+        sb.append("-------------------------------------------" + "\n");
+        sb.append("Receipt Serial Number: " + serialNumber + "\n");
+        sb.append("Cashier: " + cashier.getName() + "\n");
+        sb.append("Date: " + new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(dateTime) + "\n");
+        sb.append("-------------------------------------------" + "\n");
+        sb.append(String.format("%-20s %10s %10s\n", "Item", "Quantity", "Price"));
+        sb.append("-------------------------------------------" + "\n");
+        for (CartItem item : purchaseItems) {
+            sb.append(String.format("%-20s %10d %10.2f\n", item.getName(), item.getQuantity(), item.getPrice()));
+        }
+        sb.append("-------------------------------------------" + "\n");
+        sb.append(String.format("%-20s %20.2f\n", "Total:", total));
+        sb.append("*******************************************" + "\n");
+        sb.append("            THANK YOU COME AGAIN           \n");
+        sb.append("*******************************************" + "\n");
+        sb.append("        CREATED BY: GEORGI GINDUZOV       \n");
+
+        return sb.toString();
     }
 
     private double calculateTotal(){

@@ -1,6 +1,8 @@
 package main.java.store.data.enums;
 
-public enum GoodType {
+import java.io.Serializable;
+
+public enum GoodType implements Serializable {
     EDIBLE,
     NONEDIBLE
 }

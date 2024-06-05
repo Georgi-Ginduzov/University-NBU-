@@ -2,14 +2,18 @@ package main.java.store.data.interfaces;
 
 import main.java.store.data.enums.GoodType;
 
+import java.io.Serializable;
 import java.util.Date;
 import java.util.UUID;
 
-public interface Good {
+public interface Good extends Serializable {
     UUID getId();
     String getName();
     double getUnitDeliveryPrice();
     GoodType getType();
     Date getExpirationDate();
     int getQuantity();
+    void decreaseQuantity(int quantity);
+    void increaseQuantity(int quantity);
+    double getSellingPrice(double turnover, double discount, int expirationDaysForDiscount);
 }
