@@ -29,7 +29,7 @@ public class StoreBuilder extends Builder {
         this.foodTurnover = foodTurnover;
         this.nonFoodTurnover = nonFoodTurnover;
         this.receipts = new ArrayList<>();
-        this.inventoryManager = InventoryManager.getInstance();
+        this.inventoryManager = new InventoryManager();
         stockDeliverySpendings = 0;
     }
 

@@ -7,20 +7,12 @@ import java.util.HashSet;
 import java.util.Set;
 
 public class InventoryManager{
-    private static InventoryManager instance;
     private Set<Observer> observers;
     private Set<Good> products;
 
-    private InventoryManager() {
+    public InventoryManager() {
         observers = new HashSet<>();
         products = new HashSet<>();
-    }
-
-    public static InventoryManager getInstance() {
-        if (instance == null) {
-            instance = new InventoryManager();
-        }
-        return instance;
     }
 
     public void addObserver(Observer observer) {
