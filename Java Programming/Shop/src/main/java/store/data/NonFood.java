@@ -5,8 +5,11 @@ import main.java.store.data.enums.GoodType;
 
 import java.util.Date;
 
-public class Food extends Product{
-    public Food(ProductBuilder builder) {
+public class NonFood extends Food {
+
+    public NonFood(ProductBuilder builder) {
         super(builder);
     }
+
+
 }

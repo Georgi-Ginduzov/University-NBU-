@@ -30,12 +30,12 @@ public class Main {
 
     }
 
-    public static Store makeStore() {
+    /*public static Store makeStore() {
         // Initialize the store with food and non-food turnover percentages
-        Store store = new Store(1.2, 1.5); // Example turnover percentages
+        // TODO: Store store = new Store(1.2, 1.5); // Example turnover percentages
 
         // Add cashiers to the store
-        Cashier cashier1 = new Cashier("John Doe");
+        /*Cashier cashier1 = new Cashier("John Doe");
         Cashier cashier2 = new Cashier("Jane Smith");
         store.addCashier(cashier1);
         store.addCashier(cashier2);
@@ -76,5 +76,5 @@ public class Main {
         System.out.println("Store profit: " + store.getTotalEarnings());
 
         return store;
-    }
+    }*/
 }

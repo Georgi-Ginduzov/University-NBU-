@@ -7,12 +7,12 @@ import java.io.Serializable;
 import java.util.List;
 import java.util.Set;
 
-public interface StoreEntity extends Serializable {
+public interface StoreEntity extends Serializable, Entity {
     Set<Good> getInventory();
 
     List<Staff> getCashiers();
 
-    List<Equipment> getCashDesks();
+    List<StoreEquipment> getCashDesks();
 
     List<Receipt> getReceipts();
 

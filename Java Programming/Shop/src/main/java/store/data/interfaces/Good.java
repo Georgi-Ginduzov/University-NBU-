@@ -6,11 +6,11 @@ import java.io.Serializable;
 import java.util.Date;
 import java.util.UUID;
 
-public interface Good extends Serializable {
+public interface Good extends Serializable, Entity {
     UUID getId();
     String getName();
     double getUnitDeliveryPrice();
-    GoodType getType();
+    GoodType getCategory();
     Date getExpirationDate();
     int getQuantity();
     void decreaseQuantity(int quantity);

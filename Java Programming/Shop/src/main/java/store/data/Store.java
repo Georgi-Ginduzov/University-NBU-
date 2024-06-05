@@ -1,10 +1,9 @@
 package main.java.store.data;
 
+import main.java.store.data.builders.StoreBuilder;
 import main.java.store.data.exceptions.InsufficientBalanceException;
 import main.java.store.data.exceptions.InsufficientQuantityException;
-import main.java.store.data.interfaces.Good;
-import main.java.store.data.interfaces.Staff;
-import main.java.store.data.interfaces.StoreEntity;
+import main.java.store.data.interfaces.*;
 
 import java.util.*;
 
@@ -12,20 +11,20 @@ public class Store implements StoreEntity {
     private UUID id;
     private Set<Good> inventory;
     private List<Staff> cashiers;
-    private List<Equipment> cashDesks;
+    private List<StoreEquipment> cashDesks;
     private final double foodTurnover;
     private final  double nonFoodTurnover;
     private List<Receipt> receipts;
     private double stockDeliverySpendings;
 
-    public Store(double foodTurnover, double nonFoodTurnover) // TODO: StoreBuilder
+    public Store(StoreBuilder builder) // TODO: StoreBuilder
     {
-        this.id = UUID.randomUUID();
-        this.inventory = new HashSet<>();
-        this.cashiers = new ArrayList<>();
-        this.cashDesks = new ArrayList<>();
-        this.foodTurnover = foodTurnover;
-        this.nonFoodTurnover = nonFoodTurnover;
+        this.id = builder.getId();
+        this.inventory = builder.getInventory();
+        this.cashiers = builder.getCashiers();
+        this.cashDesks = builder.getCashDesks();
+        this.foodTurnover = builder.getFoodTurnover();
+        this.nonFoodTurnover = builder.getNonFoodTurnover();
         this.receipts = new ArrayList<>();
         stockDeliverySpendings = 0;
     }
@@ -41,7 +40,7 @@ public class Store implements StoreEntity {
     }
 
     @Override
-    public List<Equipment> getCashDesks() {
+    public List<StoreEquipment> getCashDesks() {
         return cashDesks;
     }
 
@@ -59,32 +58,35 @@ public class Store implements StoreEntity {
         return id;
     }
 
-    public void beginWorkDay(){
-        int i = 0;
-
-        for(Equipment cashDesk : cashDesks){
-            Staff suitableCashier = findCashierForCashdesk();
-            cashDesk.setCurrentStaff(suitableCashier);
-        }
+    public double getFoodTurnover() {
+        return foodTurnover;
     }
 
-    public void addGoods(List<Product> products) {
-        for (Product item : products) {
+    public double getNonFoodTurnover() {
+        return nonFoodTurnover;
+    }
+
+    public void addGoods(List<Good> products) {
+        for (Good item : products) {
             Good itemFromInventory = findGoodByName(item.getName());
+            updateSpendings(item.getUnitDeliveryPrice(), item.getQuantity());
 
             if(itemFromInventory != null) {
                 int itemQuantity = item.getQuantity();
-                this.stockDeliverySpendings += item.getUnitDeliveryPrice() * itemQuantity;
                 itemFromInventory.increaseQuantity(itemQuantity);
             }
             else {
-                stockDeliverySpendings += item.getUnitDeliveryPrice();
                 this.inventory.add(item);
             }
         }
     }
 
-    public void addCashier(Cashier cashier) {
+    public void updateSpendings(double newStockDeliverySpendings, int quantity) {
+        this.stockDeliverySpendings += newStockDeliverySpendings * quantity;
+    }
+
+    public void addCashier(Staff cashier) {
+
         this.cashiers.add(cashier);
     }
 
@@ -144,16 +146,6 @@ public class Store implements StoreEntity {
         return receipts.size();
     }
 
-    public Staff findCashierForCashdesk() {
-        Staff desiredCashier = null;
-        for (Staff cashier : cashiers) {
-            if (cashier.isOccupied()) {
-                continue;
-            }
-            desiredCashier = cashier;
-        }
-        return desiredCashier;
-    }
 
     @Override
     public double getTotalEarnings() {
@@ -186,11 +178,5 @@ public class Store implements StoreEntity {
     }
 
 
-    public double getFoodTurnover() {
-        return foodTurnover;
-    }
 
-    public double getNonFoodTurnover() {
-        return nonFoodTurnover;
-    }
 }

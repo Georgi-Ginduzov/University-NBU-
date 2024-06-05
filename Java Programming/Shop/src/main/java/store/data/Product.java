@@ -1,5 +1,6 @@
 package main.java.store.data;
 
+import main.java.store.data.builders.ProductBuilder;
 import main.java.store.data.enums.GoodType;
 import main.java.store.data.interfaces.Good;
 
@@ -14,13 +15,13 @@ public abstract class Product implements Good {
     private final Date expirationDate;
     private int quantity;
 
-    public Product(String name, double unitDeliveryPrice, GoodType type, Date expirationDate, int quantity) {
-        this.id = UUID.randomUUID();
-        this.name = name;
-        this.unitDeliveryPrice = unitDeliveryPrice;
-        this.type = type;
-        this.expirationDate = expirationDate;
-        this.quantity = quantity;
+    public Product(ProductBuilder builder) {
+        this.id = builder.getId();
+        this.name = builder.getName();
+        this.unitDeliveryPrice = builder.getUnitDeliveryPrice();
+        this.type = builder.getType();
+        this.expirationDate = builder.getExpirationDate();
+        this.quantity = builder.getQuantity();
     }
 
     @Override
@@ -39,7 +40,7 @@ public abstract class Product implements Good {
     }
 
     @Override
-    public GoodType getType() {
+    public GoodType getCategory() {
         return type;
     }
 
@@ -55,8 +56,6 @@ public abstract class Product implements Good {
     public double getSellingPrice(double turnover, double discount, int expirationDaysForDiscount) {
 
         double sellingPrice = unitDeliveryPrice * turnover;
-
-
 
         long daysToExpirationDate = ((new Date().getTime() - expirationDate.getTime()) / (1000 * 60 * 60 * 24));
 
