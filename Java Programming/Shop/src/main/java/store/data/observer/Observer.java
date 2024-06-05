@@ -1,2 +1,5 @@
-package main.java.store.data.observer;public class Observer {
+package main.java.store.data.observer;
+
+public interface Observer {
+    void update(String message);
 }

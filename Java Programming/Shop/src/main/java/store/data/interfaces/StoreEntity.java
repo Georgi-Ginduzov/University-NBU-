@@ -1,14 +1,14 @@
 package main.java.store.data.interfaces;
 
-import main.java.store.data.Equipment;
-import main.java.store.data.Receipt;
+import main.java.store.data.entities.Receipt;
+import main.java.store.data.observer.InventoryManager;
 
 import java.io.Serializable;
 import java.util.List;
 import java.util.Set;
 
 public interface StoreEntity extends Serializable, Entity {
-    Set<Good> getInventory();
+    InventoryManager getInventoryManager();
 
     List<Staff> getCashiers();
 

@@ -1,4 +1,4 @@
-package main.java.store.data;
+package main.java.store.data.entities;
 
 import main.java.store.data.interfaces.Client;
 
@@ -32,5 +32,10 @@ public class Customer implements Client {
 
     public void decreaseBalance(double amount) {
         this.balance -= amount;
+    }
+
+    @Override
+    public void update(String message) {
+        System.out.println(getName() + " received update: " + message);
     }
 }

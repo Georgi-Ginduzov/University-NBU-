@@ -1,37 +1,38 @@
-package main.java.store.data;
+package main.java.store.data.entities;
 
 import main.java.store.data.builders.StoreBuilder;
 import main.java.store.data.exceptions.InsufficientBalanceException;
 import main.java.store.data.exceptions.InsufficientQuantityException;
 import main.java.store.data.interfaces.*;
+import main.java.store.data.observer.InventoryManager;
 
 import java.util.*;
 
 public class Store implements StoreEntity {
     private UUID id;
-    private Set<Good> inventory;
     private List<Staff> cashiers;
     private List<StoreEquipment> cashDesks;
     private final double foodTurnover;
     private final  double nonFoodTurnover;
     private List<Receipt> receipts;
     private double stockDeliverySpendings;
+    private InventoryManager inventoryManager;
 
     public Store(StoreBuilder builder) // TODO: StoreBuilder
     {
         this.id = builder.getId();
-        this.inventory = builder.getInventory();
         this.cashiers = builder.getCashiers();
         this.cashDesks = builder.getCashDesks();
         this.foodTurnover = builder.getFoodTurnover();
         this.nonFoodTurnover = builder.getNonFoodTurnover();
         this.receipts = new ArrayList<>();
+        this.inventoryManager = builder.getInventoryManager();
         stockDeliverySpendings = 0;
     }
 
     @Override
-    public Set<Good> getInventory() {
-        return inventory;
+    public InventoryManager getInventoryManager() {
+        return inventoryManager;
     }
 
     @Override
@@ -76,7 +77,7 @@ public class Store implements StoreEntity {
                 itemFromInventory.increaseQuantity(itemQuantity);
             }
             else {
-                this.inventory.add(item);
+                this.inventoryManager.addProduct(item);
             }
         }
     }
@@ -133,7 +134,7 @@ public class Store implements StoreEntity {
     }
 
     private Good findGoodByName(String name) {
-        for (Good product : inventory) {
+        for (Good product : inventoryManager.getProducts()) {
             if (product.getName().equals(name)) {
                 return product;
             }

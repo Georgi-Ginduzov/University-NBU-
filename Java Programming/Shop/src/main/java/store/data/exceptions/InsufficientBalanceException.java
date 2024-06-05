@@ -1,6 +1,6 @@
 package main.java.store.data.exceptions;
 
-import main.java.store.data.Customer;
+import main.java.store.data.entities.Customer;
 
 public class InsufficientBalanceException extends Exception {
     public InsufficientBalanceException(Customer customer, double requiredAmount) {

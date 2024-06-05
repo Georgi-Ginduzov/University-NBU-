@@ -1,4 +1,4 @@
-package main.java.store.data;
+package main.java.store.data.entities;
 
 import main.java.store.data.builders.ProductBuilder;
 import main.java.store.data.enums.GoodType;

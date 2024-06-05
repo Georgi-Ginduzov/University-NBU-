@@ -1,7 +1,4 @@
-package main.java.store.data;
-
-import main.java.store.data.interfaces.Staff;
-import main.java.store.data.interfaces.StoreEquipment;
+package main.java.store.data.entities;
 
 public class CashDesk extends Equipment {
     public CashDesk() {

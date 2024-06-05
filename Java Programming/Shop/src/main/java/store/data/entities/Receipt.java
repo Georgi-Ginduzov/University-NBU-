@@ -1,4 +1,4 @@
-package main.java.store.data;
+package main.java.store.data.entities;
 
 import java.io.File;
 import java.io.FileWriter;

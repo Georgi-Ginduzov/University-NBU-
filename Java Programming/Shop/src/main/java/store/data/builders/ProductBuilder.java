@@ -1,7 +1,7 @@
 package main.java.store.data.builders;
 
-import main.java.store.data.Food;
-import main.java.store.data.NonFood;
+import main.java.store.data.entities.Food;
+import main.java.store.data.entities.NonFood;
 import main.java.store.data.enums.GoodType;
 import main.java.store.data.interfaces.Entity;
 
@@ -15,8 +15,6 @@ public class ProductBuilder extends Builder {
     private final GoodType type;
     private final Date expirationDate;
     private int quantity;
-    private double foodTurover;
-    private double nonFoodTurover;
 
     public ProductBuilder(String name, double unitDeliveryPrice, GoodType type, Date expirationDate, int quantity) {
         this.id = UUID.randomUUID();

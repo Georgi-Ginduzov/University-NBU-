@@ -1,11 +1,12 @@
 package main.java.store.data.builders;
 
-import main.java.store.data.Receipt;
-import main.java.store.data.Store;
+import main.java.store.data.entities.Receipt;
+import main.java.store.data.entities.Store;
 import main.java.store.data.interfaces.Entity;
 import main.java.store.data.interfaces.Good;
 import main.java.store.data.interfaces.Staff;
 import main.java.store.data.interfaces.StoreEquipment;
+import main.java.store.data.observer.InventoryManager;
 
 import java.util.*;
 
@@ -18,6 +19,7 @@ public class StoreBuilder extends Builder {
     private final  double nonFoodTurnover;
     private List<Receipt> receipts;
     private double stockDeliverySpendings;
+    private InventoryManager inventoryManager;
 
     public StoreBuilder(double foodTurnover, double nonFoodTurnover) {
         this.id = UUID.randomUUID();
@@ -27,6 +29,7 @@ public class StoreBuilder extends Builder {
         this.foodTurnover = foodTurnover;
         this.nonFoodTurnover = nonFoodTurnover;
         this.receipts = new ArrayList<>();
+        this.inventoryManager = InventoryManager.getInstance();
         stockDeliverySpendings = 0;
     }
 
@@ -60,6 +63,10 @@ public class StoreBuilder extends Builder {
 
     public double getStockDeliverySpendings() {
         return stockDeliverySpendings;
+    }
+
+    public InventoryManager getInventoryManager() {
+        return inventoryManager;
     }
 
     public Entity build() {

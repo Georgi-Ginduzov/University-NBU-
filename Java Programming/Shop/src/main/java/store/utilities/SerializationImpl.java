@@ -1,4 +1,4 @@
-package main.java.store.service;
+package main.java.store.utilities;
 
 import java.io.*;
 
