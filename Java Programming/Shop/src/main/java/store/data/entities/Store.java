@@ -1,8 +1,7 @@
 package main.java.store.data.entities;
 
 import main.java.store.data.builders.StoreBuilder;
-import main.java.store.data.exceptions.InsufficientBalanceException;
-import main.java.store.data.exceptions.InsufficientQuantityException;
+import main.java.store.data.enums.GoodType;
 import main.java.store.data.interfaces.*;
 import main.java.store.data.observer.InventoryManager;
 
@@ -10,24 +9,34 @@ import java.util.*;
 
 public class Store implements StoreEntity {
     private UUID id;
-    private List<Staff> cashiers;
-    private List<StoreEquipment> cashDesks;
+    private String name;
+    private List<Staff> staffList;
+    private List<StoreEquipment> equipments;
     private final double foodTurnover;
     private final  double nonFoodTurnover;
     private List<Receipt> receipts;
     private double stockDeliverySpendings;
     private InventoryManager inventoryManager;
+    private double expirityDateDiscount;
+    private long minimalDaysForDiscountForExpirationDate;
 
     public Store(StoreBuilder builder) // TODO: StoreBuilder
     {
         this.id = builder.getId();
-        this.cashiers = builder.getCashiers();
-        this.cashDesks = builder.getCashDesks();
+        this.name = builder.getStoreName();
+        this.staffList = builder.getCashiers();
+        this.equipments = builder.getCashDesks();
         this.foodTurnover = builder.getFoodTurnover();
         this.nonFoodTurnover = builder.getNonFoodTurnover();
         this.receipts = new ArrayList<>();
         this.inventoryManager = builder.getInventoryManager();
+        this.expirityDateDiscount = builder.getExpirateionDateDiscount();
+        this.minimalDaysForDiscountForExpirationDate = builder.getMinimalDaysForDiscountForExpirationDate();
         stockDeliverySpendings = 0;
+    }
+
+    public String getName() {
+        return name;
     }
 
     @Override
@@ -36,13 +45,13 @@ public class Store implements StoreEntity {
     }
 
     @Override
-    public List<Staff> getCashiers() {
-        return cashiers;
+    public List<Staff> getStaffList() {
+        return staffList;
     }
 
     @Override
-    public List<StoreEquipment> getCashDesks() {
-        return cashDesks;
+    public List<StoreEquipment> getEquipments() {
+        return equipments;
     }
 
     @Override
@@ -59,27 +68,40 @@ public class Store implements StoreEntity {
         return id;
     }
 
-    public double getFoodTurnover() {
-        return foodTurnover;
-    }
-
-    public double getNonFoodTurnover() {
-        return nonFoodTurnover;
-    }
-
     public void addGoods(List<Good> products) {
         for (Good item : products) {
-            Good itemFromInventory = findGoodByName(item.getName());
+            inventoryManager.addProduct(item);
             updateSpendings(item.getUnitDeliveryPrice(), item.getQuantity());
-
-            if(itemFromInventory != null) {
-                int itemQuantity = item.getQuantity();
-                itemFromInventory.increaseQuantity(itemQuantity);
-            }
-            else {
-                this.inventoryManager.addProduct(item);
-            }
         }
+    }
+
+    public double getSingleGoodPrice(String unitName){
+        Good good = findGoodByName(unitName);
+
+        double sellingPrice = good.getUnitDeliveryPrice();
+
+        if(good.getCategory() == GoodType.EDIBLE){
+            sellingPrice *= foodTurnover;
+        }
+        else {
+            sellingPrice *= nonFoodTurnover;
+        }
+
+        long daysToExpirationDate = ((new Date().getTime() - good.getExpirationDate().getTime()) / (1000 * 60 * 60 * 24));
+
+        if (daysToExpirationDate < minimalDaysForDiscountForExpirationDate && daysToExpirationDate >= 0) {
+            // Transform discount
+            while(expirityDateDiscount > 1) {
+                expirityDateDiscount /= 10;
+            }
+
+            sellingPrice *= expirityDateDiscount;
+        } else if (daysToExpirationDate < 0) {
+            sellingPrice *= -1;
+        }
+
+
+        return sellingPrice;
     }
 
     public void updateSpendings(double newStockDeliverySpendings, int quantity) {
@@ -88,62 +110,18 @@ public class Store implements StoreEntity {
 
     public void addCashier(Staff cashier) {
 
-        this.cashiers.add(cashier);
+        this.staffList.add(cashier);
     }
 
     public void addCashDesk(CashDesk cashDesk) {
-        this.cashDesks.add(cashDesk);
+        this.equipments.add(cashDesk);
     }
 
-    public Receipt processPurchase(Customer customer, List<CartItem> purchaseItems) throws InsufficientQuantityException, InsufficientBalanceException {
-        double totalAmount = 0;
-
-        for (CartItem item : purchaseItems) {
-            Good product = findGoodByName(item.getName());
-            if (product == null || product.getQuantity() < item.getQuantity()) {
-                throw new InsufficientQuantityException(product, item.getQuantity());
-            }
-            double sellingPrice = product.getSellingPrice(5, 0.3, 3);
-            if (sellingPrice > 0) {
-                totalAmount +=  sellingPrice * item.getQuantity();
-            }
-            else {
-                System.out.println(product.getName() + " is expired! It cannot be sold.");
-            }
-        }
-
-        if (customer.getBalance() < totalAmount) {
-            throw new InsufficientBalanceException(customer, totalAmount);
-        }
-
-        Receipt receipt = new Receipt(generateReceiptId(), new Cashier("Not implemented well") , new Date(), purchaseItems);
-        // TODO: implementation of purchasing items
-        this.receipts.add(receipt);
-        updateInventory(purchaseItems);
-        customer.decreaseBalance(totalAmount);
-        return receipt;
+    public Good findGoodByName(String name) {
+        return inventoryManager.findGoodByName(name);
     }
 
-    private void updateInventory(List<CartItem> purchaseItems) {
-        for (CartItem item : purchaseItems) {
-            Good good = findGoodByName(item.getName());
-            if (good != null) {
-                good.decreaseQuantity(item.getQuantity());
-            }
-        }
-    }
-
-    private Good findGoodByName(String name) {
-        for (Good product : inventoryManager.getProducts()) {
-            if (product.getName().equals(name)) {
-                return product;
-            }
-        }
-
-        return null;
-    }
-
-    private int generateReceiptId() {
+    public int generateReceiptId() {
         return receipts.size();
     }
 
@@ -156,7 +134,7 @@ public class Store implements StoreEntity {
     @Override
     public double getTotalSalaries() {
         double totalSalaries = 0;
-        for (Staff cashier : cashiers) {
+        for (Staff cashier : staffList) {
             totalSalaries += cashier.getSalary();
         }
         return totalSalaries;

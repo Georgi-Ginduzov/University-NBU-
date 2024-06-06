@@ -12,6 +12,7 @@ import java.util.*;
 
 public class StoreBuilder extends Builder {
     private UUID id;
+    private String storeName;
     private Set<Good> inventory;
     private List<Staff> cashiers;
     private List<StoreEquipment> cashDesks;
@@ -20,9 +21,12 @@ public class StoreBuilder extends Builder {
     private List<Receipt> receipts;
     private double stockDeliverySpendings;
     private InventoryManager inventoryManager;
+    private double expirateionDateDiscount;
+    private long minimalDaysForDiscountForExpirationDate;
 
-    public StoreBuilder(double foodTurnover, double nonFoodTurnover) {
+    public StoreBuilder(String storeName, double foodTurnover, double nonFoodTurnover, double expirateionDateDiscount, long minimalDaysForDiscountForExpirationDate) {
         this.id = UUID.randomUUID();
+        this.storeName = storeName;
         this.inventory = new HashSet<>();
         this.cashiers = new ArrayList<>();
         this.cashDesks = new ArrayList<>();
@@ -30,11 +34,17 @@ public class StoreBuilder extends Builder {
         this.nonFoodTurnover = nonFoodTurnover;
         this.receipts = new ArrayList<>();
         this.inventoryManager = new InventoryManager();
+        this.expirateionDateDiscount = expirateionDateDiscount;
+        this.minimalDaysForDiscountForExpirationDate = minimalDaysForDiscountForExpirationDate;
         stockDeliverySpendings = 0;
     }
 
     public UUID getId() {
         return id;
+    }
+
+    public String getStoreName() {
+        return storeName;
     }
 
     public Set<Good> getInventory() {
@@ -67,6 +77,14 @@ public class StoreBuilder extends Builder {
 
     public InventoryManager getInventoryManager() {
         return inventoryManager;
+    }
+
+    public double getExpirateionDateDiscount() {
+        return expirateionDateDiscount;
+    }
+
+    public long getMinimalDaysForDiscountForExpirationDate() {
+        return minimalDaysForDiscountForExpirationDate;
     }
 
     public Entity build() {

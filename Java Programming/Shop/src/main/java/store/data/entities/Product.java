@@ -53,26 +53,6 @@ public abstract class Product implements Good {
         return quantity;
     }
 
-    public double getSellingPrice(double turnover, double discount, int expirationDaysForDiscount) {
-
-        double sellingPrice = unitDeliveryPrice * turnover;
-
-        long daysToExpirationDate = ((new Date().getTime() - expirationDate.getTime()) / (1000 * 60 * 60 * 24));
-
-        if (daysToExpirationDate < expirationDaysForDiscount) {
-            // Transform discount
-            while(discount > 1) {
-                discount /= 10;
-            }
-
-            sellingPrice *= discount;
-        } else if (daysToExpirationDate < 0) {
-            sellingPrice *= -1;
-        }
-
-        return sellingPrice;
-    }
-
     // Decrease the quantity in stock
     public void decreaseQuantity(int amount) {
         this.quantity -= amount;
