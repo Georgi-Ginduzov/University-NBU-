@@ -1,19 +1,23 @@
 package main.java.store.service;
 
 import main.java.store.data.entities.CartItem;
-import main.java.store.data.entities.Customer;
 import main.java.store.data.entities.Product;
 import main.java.store.data.entities.Store;
 import main.java.store.data.exceptions.InsufficientBalanceException;
 import main.java.store.data.exceptions.InsufficientQuantityException;
 import main.java.store.data.interfaces.*;
-import main.java.store.service.command.AddClientCommand;
+import main.java.store.service.commands.AddClientCommand;
+import main.java.store.service.commands.AddItemToCartCommand;
+import main.java.store.service.commands.CommandInvoker;
 import main.java.store.service.interfaces.Command;
 
 import java.util.Scanner;
-import java.util.Set;
 
 public class StoreCommandImpl implements Command {
+    @Override
+    public void execute() throws InsufficientBalanceException, InsufficientQuantityException {
+
+    }
     /*private Store store;
     private Command command;
 
@@ -105,7 +109,7 @@ public class StoreCommandImpl implements Command {
         System.out.println("Store cleaned.");
     }*/
 
-    private Store store;
+    /*private Store store;
     private CommandInvoker invoker;
 
     public StoreServiceImpl(Store store) {
@@ -132,10 +136,10 @@ public class StoreCommandImpl implements Command {
             case "additemtocart":
                 System.out.println("Enter product details: ");
                 // Assuming we have a method to create a product from input
-                Product product = createProductFromInput(input);
+                ItemInCart product = createProductFromInput(input);
 
                 // Assuming we have a cart associated with the client
-                Command addItemToCartCommand = new AddItemToCartCommand(client.getCart(), product);
+                Command addItemToCartCommand = new AddItemToCartCommand(store, product);
                 invoker.setCommand(addItemToCartCommand);
                 invoker.executeCommand();
                 break;
@@ -152,12 +156,13 @@ public class StoreCommandImpl implements Command {
         }
     }
 
-    private Product createProductFromInput(Scanner input) {
-        // Implementation to create a product from user input
-        // This could involve multiple prompts and parsing
-        return new Product(/* parameters */);
-    }
+    private ItemInCart createProductFromInput(Scanner input) {
+        Scanner inputProduct = new Scanner(System.in);
+        System.out.println("Enter product name: ");
+        String name = inputProduct.next();
+        System.out.println("Enter product quantity: ");
+        int quantity = inputProduct.nextInt();
 
-
-
+        return new CartItem(quantity, store.getSingleGoodPrice(name), name);
+    }*/
 }

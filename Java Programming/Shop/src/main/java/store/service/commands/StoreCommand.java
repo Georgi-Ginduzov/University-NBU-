@@ -1,8 +1,6 @@
-package main.java.store.service.command;
+package main.java.store.service.commands;
 
 import main.java.store.data.entities.Store;
-import main.java.store.data.interfaces.Staff;
-import main.java.store.data.interfaces.StoreEquipment;
 import main.java.store.service.interfaces.Command;
 
 public abstract class StoreCommand implements Command {
@@ -11,6 +9,8 @@ public abstract class StoreCommand implements Command {
     public StoreCommand(Store store) {
         this.store = store;
     }
+
+
 
     /*@Override
     public void execute() {

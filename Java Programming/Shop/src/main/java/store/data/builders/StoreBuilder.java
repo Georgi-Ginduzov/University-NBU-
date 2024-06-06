@@ -2,10 +2,7 @@ package main.java.store.data.builders;
 
 import main.java.store.data.entities.Receipt;
 import main.java.store.data.entities.Store;
-import main.java.store.data.interfaces.Entity;
-import main.java.store.data.interfaces.Good;
-import main.java.store.data.interfaces.Staff;
-import main.java.store.data.interfaces.StoreEquipment;
+import main.java.store.data.interfaces.*;
 import main.java.store.data.observer.InventoryManager;
 
 import java.util.*;
@@ -19,6 +16,7 @@ public class StoreBuilder extends Builder {
     private final double foodTurnover;
     private final  double nonFoodTurnover;
     private List<Receipt> receipts;
+    private List<Client> clients;
     private double stockDeliverySpendings;
     private InventoryManager inventoryManager;
     private double expirateionDateDiscount;
@@ -33,6 +31,7 @@ public class StoreBuilder extends Builder {
         this.foodTurnover = foodTurnover;
         this.nonFoodTurnover = nonFoodTurnover;
         this.receipts = new ArrayList<>();
+        this.clients = new ArrayList<>();
         this.inventoryManager = new InventoryManager();
         this.expirateionDateDiscount = expirateionDateDiscount;
         this.minimalDaysForDiscountForExpirationDate = minimalDaysForDiscountForExpirationDate;
@@ -71,6 +70,10 @@ public class StoreBuilder extends Builder {
         return receipts;
     }
 
+    public List<Client> getClients() {
+        return clients;
+    }
+
     public double getStockDeliverySpendings() {
         return stockDeliverySpendings;
     }
@@ -87,7 +90,7 @@ public class StoreBuilder extends Builder {
         return minimalDaysForDiscountForExpirationDate;
     }
 
-    public Entity build() {
+    public Store build() {
         return new Store(this);
     }
 

@@ -1,21 +1,15 @@
-import main.java.store.data.*;
-import main.java.store.data.enums.GoodType;
-import main.java.store.data.CartItem;
-import main.java.store.service.SerializationImpl;
+import main.java.store.data.entities.Store;
+import main.java.store.service.CommandBasedEngine;
+import main.java.store.service.commands.CommandInvoker;
+import main.java.store.utilities.SerializationImpl;
 
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
 
 public class Main {
     public static void main(String[] args) throws IOException, ClassNotFoundException {
-        SerializationImpl serialization = new SerializationImpl();
-        Store lidl = (Store)serialization.load("src/main/java/store/data/database/Store_Lidl");
-
-        System.out.println(lidl.getId());
-        //lidl.beginWorkDay();
-
+        CommandBasedEngine engine = new CommandBasedEngine();
+        // TODO: Make a store instance or create one
+        engine.run();
 
         // TODO: Make customers
 

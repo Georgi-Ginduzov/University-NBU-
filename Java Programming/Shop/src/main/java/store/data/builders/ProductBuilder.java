@@ -2,6 +2,7 @@ package main.java.store.data.builders;
 
 import main.java.store.data.entities.Food;
 import main.java.store.data.entities.NonFood;
+import main.java.store.data.entities.Product;
 import main.java.store.data.enums.GoodType;
 import main.java.store.data.interfaces.Entity;
 
@@ -50,7 +51,7 @@ public class ProductBuilder extends Builder {
     }
 
     @Override
-    public Entity build() {
+    public Product build() {
         if (this.getType() == GoodType.EDIBLE){
             return new Food(this);
         }

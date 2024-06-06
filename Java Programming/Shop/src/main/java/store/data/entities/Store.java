@@ -15,6 +15,7 @@ public class Store implements StoreEntity {
     private final double foodTurnover;
     private final  double nonFoodTurnover;
     private List<Receipt> receipts;
+    private List<Client> clients;
     private double stockDeliverySpendings;
     private InventoryManager inventoryManager;
     private double expirityDateDiscount;
@@ -28,11 +29,12 @@ public class Store implements StoreEntity {
         this.equipments = builder.getCashDesks();
         this.foodTurnover = builder.getFoodTurnover();
         this.nonFoodTurnover = builder.getNonFoodTurnover();
-        this.receipts = new ArrayList<>();
+        this.receipts = builder.getReceipts();
+        this.clients = builder.getClients();
         this.inventoryManager = builder.getInventoryManager();
         this.expirityDateDiscount = builder.getExpirateionDateDiscount();
         this.minimalDaysForDiscountForExpirationDate = builder.getMinimalDaysForDiscountForExpirationDate();
-        stockDeliverySpendings = 0;
+        this.stockDeliverySpendings = builder.getStockDeliverySpendings();
     }
 
     public String getName() {
@@ -70,9 +72,13 @@ public class Store implements StoreEntity {
 
     public void addGoods(List<Good> products) {
         for (Good item : products) {
-            inventoryManager.addProduct(item);
+            inventoryManager.addProductInStockroom(item);
             updateSpendings(item.getUnitDeliveryPrice(), item.getQuantity());
         }
+    }
+
+    public void addClient(Client client) {
+        clients.add(client);
     }
 
     public double getSingleGoodPrice(String unitName){

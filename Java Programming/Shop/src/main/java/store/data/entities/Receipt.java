@@ -1,5 +1,7 @@
 package main.java.store.data.entities;
 
+import main.java.store.data.interfaces.ItemInCart;
+
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -12,10 +14,10 @@ public final class Receipt implements Serializable {
     private final int serialNumber;
     private final Cashier cashier;
     private final Date dateTime;
-    private final List<CartItem> purchaseItems;
+    private final List<ItemInCart> purchaseItems;
     private final double total;
 
-    public Receipt(int serialNumber, Cashier cashier, Date dateTime, List<CartItem> purchaseItems) {
+    public Receipt(int serialNumber, Cashier cashier, Date dateTime, List<ItemInCart> purchaseItems) {
         this.serialNumber = serialNumber;
         this.cashier = cashier;
         this.dateTime = dateTime;
@@ -52,7 +54,7 @@ public final class Receipt implements Serializable {
             writer.write("-------------------------------------------" + "\n");
             writer.write(String.format("%-20s %10s %10s\n", "Item", "Quantity", "Price"));
             writer.write("-------------------------------------------" + "\n");
-            for (CartItem item : purchaseItems) {
+            for (ItemInCart item : purchaseItems) {
                 writer.write(String.format("%-20s %10d %10.2f\n", item.getName(), item.getQuantity(), item.getPrice()));
             }
             writer.write("-------------------------------------------" + "\n");
@@ -78,7 +80,7 @@ public final class Receipt implements Serializable {
         sb.append("-------------------------------------------" + "\n");
         sb.append(String.format("%-20s %10s %10s\n", "Item", "Quantity", "Price"));
         sb.append("-------------------------------------------" + "\n");
-        for (CartItem item : purchaseItems) {
+        for (ItemInCart item : purchaseItems) {
             sb.append(String.format("%-20s %10d %10.2f\n", item.getName(), item.getQuantity(), item.getPrice()));
         }
         sb.append("-------------------------------------------" + "\n");
@@ -93,7 +95,7 @@ public final class Receipt implements Serializable {
 
     private double calculateTotal(){
         double total = 0;
-        for (CartItem item : purchaseItems) {
+        for (ItemInCart item : purchaseItems) {
             total += item.getPrice();
         }
 
