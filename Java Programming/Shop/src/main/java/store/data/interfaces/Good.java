@@ -15,5 +15,4 @@ public interface Good extends Serializable, Entity {
     int getQuantity();
     void decreaseQuantity(int quantity);
     void increaseQuantity(int quantity);
-    double getSellingPrice(double turnover, double discount, int expirationDaysForDiscount);
 }

@@ -1,6 +1,5 @@
 package main.java.store.data.observer;
 
-import main.java.store.data.entities.Product;
 import main.java.store.data.interfaces.Good;
 
 import java.util.HashSet;
@@ -31,7 +30,29 @@ public class InventoryManager{
 
     public void addProduct(Good good) {
         products.add(good);
+
+        for (Good item : products) {
+            Good itemFromInventory = findGoodByName(item.getName());
+
+            if(itemFromInventory != null) {
+                int itemQuantity = item.getQuantity();
+                itemFromInventory.increaseQuantity(itemQuantity);
+            }
+            else {
+                addProduct(item);
+            }
+        }
         notifyObservers("Product added: " + good.getName());
+    }
+
+    public Good findGoodByName(String name) {
+        for (Good product : getProducts()) {
+            if (product.getName().equals(name)) {
+                return product;
+            }
+        }
+
+        return null;
     }
 
     public void removeProduct(Good good) {

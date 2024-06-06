@@ -9,13 +9,9 @@ import java.util.Set;
 
 public interface StoreEntity extends Serializable, Entity {
     InventoryManager getInventoryManager();
-
-    List<Staff> getCashiers();
-
-    List<StoreEquipment> getCashDesks();
-
+    List<Staff> getStaffList();
+    List<StoreEquipment> getEquipments();
     List<Receipt> getReceipts();
-
     double getStockDeliverySpendings();
     double getTotalSalaries();
     double getCustomerTotalPurchases();
