@@ -12,8 +12,9 @@ public class AddItemToCartCommand extends StoreCommand {
     }
 
     @Override
-    public void execute() {
+    public boolean execute() {
         store.getInventoryManager().addProductToCart(itemInCart);
         System.out.println("Item added to cart." + itemInCart.getName());
+        return false;
     }
 }

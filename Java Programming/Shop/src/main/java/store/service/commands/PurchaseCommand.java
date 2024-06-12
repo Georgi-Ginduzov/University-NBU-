@@ -26,7 +26,7 @@ public class PurchaseCommand extends StoreCommand {
     }
 
     @Override
-    public void execute() throws InsufficientBalanceException, InsufficientQuantityException {
+    public boolean execute() throws InsufficientBalanceException, InsufficientQuantityException {
         Cashier cashierToConsult = cashierToConsultClient();
         double totalAmount = 0;
 
@@ -57,6 +57,7 @@ public class PurchaseCommand extends StoreCommand {
 
         System.out.println("Purchase completed for client: " + client.getName());
         System.out.println("Receipt: " + receipt);
+        return false;
     }
 
     public Cashier cashierToConsultClient(){

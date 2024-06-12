@@ -4,5 +4,5 @@ import main.java.store.data.exceptions.InsufficientBalanceException;
 import main.java.store.data.exceptions.InsufficientQuantityException;
 
 public interface Command {
-    void execute() throws InsufficientBalanceException, InsufficientQuantityException;
+    boolean execute() throws InsufficientBalanceException, InsufficientQuantityException;
 }

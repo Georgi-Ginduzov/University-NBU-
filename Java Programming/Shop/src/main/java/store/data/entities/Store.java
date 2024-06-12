@@ -10,12 +10,11 @@ import java.util.*;
 public class Store implements StoreEntity {
     private UUID id;
     private String name;
-    private List<Staff> staffList;
+    private Set<Staff> staffList;
     private List<StoreEquipment> equipments;
     private final double foodTurnover;
     private final  double nonFoodTurnover;
     private List<Receipt> receipts;
-    private List<Client> clients;
     private double stockDeliverySpendings;
     private InventoryManager inventoryManager;
     private double expirityDateDiscount;
@@ -30,7 +29,6 @@ public class Store implements StoreEntity {
         this.foodTurnover = builder.getFoodTurnover();
         this.nonFoodTurnover = builder.getNonFoodTurnover();
         this.receipts = builder.getReceipts();
-        this.clients = builder.getClients();
         this.inventoryManager = builder.getInventoryManager();
         this.expirityDateDiscount = builder.getExpirateionDateDiscount();
         this.minimalDaysForDiscountForExpirationDate = builder.getMinimalDaysForDiscountForExpirationDate();
@@ -47,7 +45,7 @@ public class Store implements StoreEntity {
     }
 
     @Override
-    public List<Staff> getStaffList() {
+    public Set<Staff> getStaffList() {
         return staffList;
     }
 
@@ -78,7 +76,7 @@ public class Store implements StoreEntity {
     }
 
     public void addClient(Client client) {
-        clients.add(client);
+        getInventoryManager().addObserver(client);
     }
 
     public double getSingleGoodPrice(String unitName){
@@ -163,5 +161,14 @@ public class Store implements StoreEntity {
     }
 
 
-
+    public Client getClientByName(String customerName) {
+        Client suitableClient = null;
+        for (Client client : getInventoryManager().getObservers()){
+            if (client.getName().equals(customerName)){
+                suitableClient = client;
+                break;
+            }
+        }
+        return suitableClient;
+    }
 }

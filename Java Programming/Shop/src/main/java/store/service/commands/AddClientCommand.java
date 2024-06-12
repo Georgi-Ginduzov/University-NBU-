@@ -14,8 +14,9 @@ public class AddClientCommand implements Command {
     }
 
     @Override
-    public void execute() {
-        store.addClient(client);
+    public boolean execute() {
+        store.getInventoryManager().addObserver(client);
         System.out.println("Client added: " + client.getName());
+        return false;
     }
 }

@@ -1,13 +1,16 @@
 package main.java.store.data.observer;
 
+import main.java.store.data.interfaces.Client;
 import main.java.store.data.interfaces.Good;
 import main.java.store.data.interfaces.ItemInCart;
 
+import java.io.Serializable;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
-public class InventoryManager{
-    private Set<Observer> observers;
+public class InventoryManager implements Serializable {
+    private Set<Client> observers;
     private Set<Good> products;
     private Set<ItemInCart> cart;
 
@@ -16,7 +19,7 @@ public class InventoryManager{
         products = new HashSet<>();
     }
 
-    public void addObserver(Observer observer) {
+    public void addObserver(Client observer) {
         observers.add(observer);
     }
 
@@ -76,5 +79,9 @@ public class InventoryManager{
 
     public Set<ItemInCart> getCart() {
         return cart;
+    }
+
+    public Set<Client> getObservers() {
+        return observers ;
     }
 }

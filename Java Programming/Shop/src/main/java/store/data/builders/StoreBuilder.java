@@ -11,12 +11,11 @@ public class StoreBuilder extends Builder {
     private UUID id;
     private String storeName;
     private Set<Good> inventory;
-    private List<Staff> cashiers;
+    private Set<Staff> cashiers;
     private List<StoreEquipment> cashDesks;
     private final double foodTurnover;
     private final  double nonFoodTurnover;
     private List<Receipt> receipts;
-    private List<Client> clients;
     private double stockDeliverySpendings;
     private InventoryManager inventoryManager;
     private double expirateionDateDiscount;
@@ -26,12 +25,11 @@ public class StoreBuilder extends Builder {
         this.id = UUID.randomUUID();
         this.storeName = storeName;
         this.inventory = new HashSet<>();
-        this.cashiers = new ArrayList<>();
+        this.cashiers = new HashSet<>();
         this.cashDesks = new ArrayList<>();
         this.foodTurnover = foodTurnover;
         this.nonFoodTurnover = nonFoodTurnover;
         this.receipts = new ArrayList<>();
-        this.clients = new ArrayList<>();
         this.inventoryManager = new InventoryManager();
         this.expirateionDateDiscount = expirateionDateDiscount;
         this.minimalDaysForDiscountForExpirationDate = minimalDaysForDiscountForExpirationDate;
@@ -46,11 +44,7 @@ public class StoreBuilder extends Builder {
         return storeName;
     }
 
-    public Set<Good> getInventory() {
-        return inventory;
-    }
-
-    public List<Staff> getCashiers() {
+    public Set<Staff> getCashiers() {
         return cashiers;
     }
 
@@ -68,10 +62,6 @@ public class StoreBuilder extends Builder {
 
     public List<Receipt> getReceipts() {
         return receipts;
-    }
-
-    public List<Client> getClients() {
-        return clients;
     }
 
     public double getStockDeliverySpendings() {

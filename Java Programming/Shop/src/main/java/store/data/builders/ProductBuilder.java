@@ -4,7 +4,6 @@ import main.java.store.data.entities.Food;
 import main.java.store.data.entities.NonFood;
 import main.java.store.data.entities.Product;
 import main.java.store.data.enums.GoodType;
-import main.java.store.data.interfaces.Entity;
 
 import java.util.Date;
 import java.util.UUID;
